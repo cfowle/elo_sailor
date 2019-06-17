@@ -36,7 +36,25 @@ getZ = function(id, expectedResults, results){
   actual = results[[id]]/denominator
   expected = expectedResults[[id]]/denominator
   
-  return(expected - actual)
+  relativeComponent = expected - actual
+  nominalComponent = ACTUAL_WEIGHT*(0.5 - actual)
+  
+  return(relativeComponent + nominalComponent)
+}
+
+getZNormal = function(id, expectedResults, results){
+  ###IN:  id                unique identifier of competitor
+  ###     expectedResults   list of expected results
+  ###     results           list of actual results
+  ###OUT:                   a measure of the difference between expected an actual results
+  
+  denominator = max(unlist(results))
+  actual = results[[id]]/denominator
+  expected = expectedResults[[id]]/denominator
+  
+  prob = 0.5*(1 + erf((actual - expected)/0.4*sqrt(2)))
+  z = 4*(prob - 0.5) ^ 3
+  return(z)
 }
 
 getRegattaShifter = function(id, n, regatta){
@@ -61,7 +79,7 @@ updateCompetitorScore = function(competitor, regatta){
   n_new = n + DELTA_T*shifter
   
   day = regatta$day
-  competitor$n = n_new
+  competitor$n = (n_new + n)/2
   competitor$n_old = rbind(c(day, n_new), competitor$n_old)
     
   return(competitor)
