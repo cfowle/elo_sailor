@@ -2,7 +2,7 @@
 ########               RUN REGATTA-LEVEL RANKING METHOD                ######## 
 ###############################################################################
 
-results = read_csv("../neisa_only.csv")
+results = read_csv("../input/neisa_only.csv")
 results %<>% 
   mutate(competitorName = school_coded) %>%
   rename(competitorID = school_coded,
