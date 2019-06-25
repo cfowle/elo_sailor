@@ -9,12 +9,37 @@
 addCompetitors = function(existingRankings, newCompetitors) {
   ###HANDLES THE CREATIONS OF NEW COMPETITOR OBJECTS
   ###INPUTS:  exisitingRankings   list of rankings with competitor id as key
-  ###         newCompetitors      data frame of newCompetitor details
-  ###                             TODO: newCompetitors column spec
+  ###         newCompetitors      data frame of newCompetitor details with columns
+  ###                             competitorID, competitorName
   ###OUPUTS:                      updated rankings list
   
-  ##TODO: check that newCompetitors object is as expected
-  ##TODO: create new competitor objects and add them to the rankings
+  ##check that newCompetitors object is as expected
+  columnNames = c("competitorName", "competitorID")
+  errorMessagePrefix = "ERROR IN addCompetitors: results data frame must have column "
+  for(name in columnNames){
+    assert_that(name %in% colnames(results), msg = paste0(errorMessagePrefix, name, "."))
+  }
+  
+  ##create new competitor objects and add them to the rankings
+  updatedRankings = exisitingRankings
+  for(i in 1:nrows(newCompetitors)){
+    competitor = newCompetitors[i, ]
+    name = competitor$competitorName
+    id = competitor$competitorID
+    ##TODO: Think about whether or not this is the start condition we want
+    rank = START_RANKING 
+    rankings = data.frame(day  = numeric,
+                          id   = numeric,
+                          name = character,
+                          raceID = numeric,
+                          newRanking = numeric)
+    initialRow = c(0, -1, "Initial Value", 0, rank)
+    
+    updateRankings[id] = Competitor(id = id,
+                                    name = name,
+                                    currentRank = rank,
+                                    rankings = rankings)
+  }
   
   return(updatedRankings)
 }
