@@ -1,7 +1,7 @@
 ###############################################################################
 ### PROJECT:  ELO SAILOR
 ### CREATED:  2019-06-24
-### MODIFIED: 2019-06-24
+### MODIFIED: 2019-06-25
 ### REVIEWED: NO
 ### SUMMARY:  DEFINE FUNCTIONS THAT FOR THE RATING CREATION AND UPDATE PROCESS
 ###############################################################################
@@ -51,8 +51,16 @@ checkForMissingCompetitors = function(existingRankings, results) {
   ###OUPUTS:                      data frame of competitor details with entities
   ###                             results and not existing rankings
   
-  ##TODO: get list of competitors in each input
-  ##TODO: find difference and return details table
+  ##get list of competitors in each input
+  rankingsCompetitors = names(exisitingRankings)
+  resultsCompetitors  = unique(results$competitorID)
+  
+  ##find difference and return details table
+  newCompetitors = setDiff(resultsCompetitors, rankingsCompetitors)
+  competitorsTable = results %>%
+    filter(competitorID %in% newCompetitors) %>%
+    select(competitorID, competitorName) %>%
+    distinct()
   
   return(competitorsTable)
 }
