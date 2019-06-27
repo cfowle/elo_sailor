@@ -15,9 +15,15 @@ addCompetitors = function(existingRankings, newCompetitors) {
   
   ##check that newCompetitors object is as expected
   columnNames = c("competitorName", "competitorID")
+<<<<<<< HEAD
   errorMessagePrefix = "ERROR IN addCompetitors: newCompetitors data frame must have column "
   for(name in columnNames){
     assert_that(name %in% colnames(newCompetitors), msg = paste0(errorMessagePrefix, name, "."))
+=======
+  errorMessagePrefix = "ERROR IN addCompetitors: results data frame must have column "
+  for(name in columnNames){
+    assert_that(name %in% colnames(results), msg = paste0(errorMessagePrefix, name, "."))
+>>>>>>> f44e938a460080a785319a0dbd7c56c3a67510dc
   }
   
   ##create new competitor objects and add them to the rankings
@@ -65,6 +71,7 @@ checkForMissingCompetitors = function(existingRankings, results) {
   return(competitorsTable)
 }
 
+<<<<<<< HEAD
 processResult = function(existingRankings, result, regatta){
   ###UPDATES EXISITING RANKINGS GIVEN A RESULT
   ###INPUTS:  exisitingRankings   list of rankings with competitor id as key
@@ -108,10 +115,22 @@ processResult = function(existingRankings, result, regatta){
                                                        updatedScores[1, 2],
                                                        regatta,
                                                        result$raceID[[1]])
+=======
+processResult = function(existingRankings, result){
+  ###UPDATES EXISITING RANKINGS GIVEN A RESULT
+  ###INPUTS:  exisitingRankings   list of rankings with competitor id as key
+  ###         result              data frame of a single result
+  ###                             TODO: results column spec
+  ###OUPUTS:                      updated rankings list
+  
+  ##TODO: check that inputs conform to constraints
+  ##TODO: run Elo update
+>>>>>>> f44e938a460080a785319a0dbd7c56c3a67510dc
   
   return(updatedRankings)
 }
 
+<<<<<<< HEAD
 updateExistingRatings = function(existingRankings, regatta, results){
   ###UPDATES EXISITING RANKINGS GIVEN A SET OF RESULTS
   ###INPUTS:  exisitingRankings   list of rankings with competitor id as key
@@ -140,6 +159,19 @@ updateExistingRatings = function(existingRankings, regatta, results){
     result = pairwiseResults[i, ]
     updatedRakings = processResult(updatedRankings, result, regatta)
   }
+=======
+updateExistingRatings = function(existingRankings, results){
+  ###UPDATES EXISITING RANKINGS GIVEN A SET OF RESULTS
+  ###INPUTS:  exisitingRankings   list of rankings with competitor id as key
+  ###         results             data frame of results
+  ###                             TODO: results column spec
+  ###OUPUTS:                      updated rankings list
+  
+  ##TODO: check that inputs conform to constraints
+  ##TODO: check for competitors not in existing rankings
+  ##TODO: update rankings with missing competitors
+  ##TODO: loop through results and update rankings
+>>>>>>> f44e938a460080a785319a0dbd7c56c3a67510dc
   
   return(updatedRankings)
 }

@@ -11,8 +11,8 @@ createPairwiseComparisons = function(results){
   ###                   and score columns
   ###OUTPUT:            datatable of pairwise matchups for each raceID with the
   ###                   raceID, competitorA, competitorB, win, scoreDiff columns
-  
-  ##confirm input criteria are met
+
+  ##confirm inout criteria are met
   columnNames = c("raceID", "competitorID", "place", "score")
   errorMessagePrefix = "ERROR IN createPairwiseComparisons: results data frame must have column "
   for(name in columnNames){
@@ -38,7 +38,11 @@ createPairwiseComparisons = function(results){
     assert_that(length(sailors) == length(unique(sailors)),
                 msg = "ERROR IN createPairwiseComparison: a single competitor id can be present only once in a given race.")
     
+<<<<<<< HEAD
     for(i in 1:(length(sailors)-1)){
+=======
+    for(i in 1:length(sailors)){
+>>>>>>> f44e938a460080a785319a0dbd7c56c3a67510dc
       for(j in (i + 1):length(sailors)){
         competitorA = sailors[[i]]
         competitorB = sailors[[j]]
