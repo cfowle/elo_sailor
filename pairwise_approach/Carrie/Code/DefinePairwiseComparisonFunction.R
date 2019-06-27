@@ -12,7 +12,7 @@ createPairwiseComparisons = function(results){
   ###OUTPUT:            datatable of pairwise matchups for each raceID with the
   ###                   raceID, competitorA, competitorB, win, scoreDiff columns
 
-  ##confirm inout criteria are met
+  ##confirm input criteria are met
   columnNames = c("raceID", "competitorID", "place", "score")
   errorMessagePrefix = "ERROR IN createPairwiseComparisons: results data frame must have column "
   for(name in columnNames){
