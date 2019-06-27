@@ -77,10 +77,8 @@ processResult = function(existingRankings, result, regatta){
   columnNames = c("raceID", "competitorA", "competitorB", "win", "scoreDiff")
   errorMessagePrefix = "ERROR IN processResult: result data frame must have column "
   for(name in columnNames){
-    assert_that(name %in% colnames(result), msg = paste0(errorMessagePrefix, name, "."))
+    assert_that(name %in% colnames(results), msg = paste0(errorMessagePrefix, name, "."))
   }
-  
-  ##Run Elo update
   
   ##Get score prior to race
   competitorA = result$competitorA[[1]]
@@ -114,17 +112,34 @@ processResult = function(existingRankings, result, regatta){
   return(updatedRankings)
 }
 
-updateExistingRatings = function(existingRankings, results){
+updateExistingRatings = function(existingRankings, regatta, results){
   ###UPDATES EXISITING RANKINGS GIVEN A SET OF RESULTS
   ###INPUTS:  exisitingRankings   list of rankings with competitor id as key
-  ###         results             data frame of results
-  ###                             TODO: results column spec
+  ###         regatta             Regatta object for results
+  ###         results             data frame of results from a single regatta
+  ###                             with columns raceID, competitorID,
+  ###                             competitorName, place, and score
   ###OUPUTS:                      updated rankings list
   
-  ##TODO: check that inputs conform to constraints
-  ##TODO: check for competitors not in existing rankings
-  ##TODO: update rankings with missing competitors
-  ##TODO: loop through results and update rankings
+  ##check that inputs meet spec
+  columnNames = c("raceID", "competitorID", "competitorName", "place", "score")
+  errorMessagePrefix = "ERROR IN processResult: result data frame must have column "
+  for(name in columnNames){
+    assert_that(name %in% colnames(results), msg = paste0(errorMessagePrefix, name, "."))
+  }
+  
+  ##check for competitors not in existing rankings & update accordingly
+  missingCompetitors = checkForMissingCompetitors(existingRankings, results)
+  updatedRakings     = addCompetitors(existingRankings, missingCompetitors)
+  
+  ##rewrite results pairwise
+  pairwiseResults = createPairwiseComparisons(results)
+  
+  ##loop through results and update rankings
+  for(i in 1:nrow(pairwiseResults)) {
+    result = pairwiseResults[i, ]
+    updatedRakings = processResult(updatedRankings, result, regatta)
+  }
   
   return(updatedRankings)
 }
