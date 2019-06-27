@@ -15,9 +15,9 @@ addCompetitors = function(existingRankings, newCompetitors) {
   
   ##check that newCompetitors object is as expected
   columnNames = c("competitorName", "competitorID")
-  errorMessagePrefix = "ERROR IN addCompetitors: results data frame must have column "
+  errorMessagePrefix = "ERROR IN addCompetitors: newCompetitors data frame must have column "
   for(name in columnNames){
-    assert_that(name %in% colnames(results), msg = paste0(errorMessagePrefix, name, "."))
+    assert_that(name %in% colnames(newCompetitors), msg = paste0(errorMessagePrefix, name, "."))
   }
   
   ##create new competitor objects and add them to the rankings
@@ -65,15 +65,51 @@ checkForMissingCompetitors = function(existingRankings, results) {
   return(competitorsTable)
 }
 
-processResult = function(existingRankings, result){
+processResult = function(existingRankings, result, regatta){
   ###UPDATES EXISITING RANKINGS GIVEN A RESULT
   ###INPUTS:  exisitingRankings   list of rankings with competitor id as key
-  ###         result              data frame of a single result
-  ###                             TODO: results column spec
+  ###         result              data frame of a single result with columns
+  ###                             raceID, competitorA, competitorB, win, scoreDiff
+  ###         regatta             a Regatta Object  
   ###OUPUTS:                      updated rankings list
   
-  ##TODO: check that inputs conform to constraints
-  ##TODO: run Elo update
+  ##check that inputs conform to constraints
+  columnNames = c("raceID", "competitorA", "competitorB", "win", "scoreDiff")
+  errorMessagePrefix = "ERROR IN processResult: result data frame must have column "
+  for(name in columnNames){
+    assert_that(name %in% colnames(result), msg = paste0(errorMessagePrefix, name, "."))
+  }
+  
+  ##Run Elo update
+  
+  ##Get score prior to race
+  competitorA = result$competitorA[[1]]
+  competitorB = result$competitorB[[1]]
+  scoreA = existingRankings[[competitorA]]$currentRank
+  scoreB = existingRankings[[competitorB]]$currentRank
+  
+  ##Get K
+  if(SCALE_K) {
+    scoreDiff = result$scoreDiff[[1]]
+    k = log(scoreDiff)
+  } else {
+    k = K
+  }
+  
+  ##Run Elo update function
+  win = result$win[[1]]
+  updatedScores = elo.calc(win, scoreA, scoreB, k = k)
+  
+  ##Update rankings
+  updatedRankings = existingRankings
+  updatedRankings[competitorA] = updateCompetitorScore(existingRankings[competitorA],
+                                                       updatedScores[1, 1],
+                                                       regatta,
+                                                       result$raceID[[1]])
+  updatedRankings[competitorB] = updateCompetitorScore(existingRankings[competitorB],
+                                                       updatedScores[1, 2],
+                                                       regatta,
+                                                       result$raceID[[1]])
   
   return(updatedRankings)
 }
