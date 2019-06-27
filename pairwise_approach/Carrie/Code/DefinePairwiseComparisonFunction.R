@@ -38,11 +38,7 @@ createPairwiseComparisons = function(results){
     assert_that(length(sailors) == length(unique(sailors)),
                 msg = "ERROR IN createPairwiseComparison: a single competitor id can be present only once in a given race.")
     
-<<<<<<< HEAD
     for(i in 1:(length(sailors)-1)){
-=======
-    for(i in 1:length(sailors)){
->>>>>>> f44e938a460080a785319a0dbd7c56c3a67510dc
       for(j in (i + 1):length(sailors)){
         competitorA = sailors[[i]]
         competitorB = sailors[[j]]
