@@ -9,14 +9,11 @@
 Regatta = setRefClass("Regatta", 
                       fields = list(id              = "character",
                                     name            = "character",
-                                    day             = "numeric",
-                                    results         = "list"))
+                                    day             = "numeric"))
 
-newRegatta = function(id, day, name, results, competitors) {
-  scores = getCompetitorScores(results, competitors)
+newRegatta = function(id, day, name) {
   regatta = Regatta(id = id,
           name = name,
-          day = day,
-          results = getResultList(results))
+          day = day)
   return(regatta)
 }
