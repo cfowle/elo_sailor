@@ -28,12 +28,12 @@ createPairwiseComparisons = function(results){
   
   ##loop through results to create pairwise comparison
   races = unique(results$raceID)
-  for(race in races) {
+  for(raceID in races) {
     race = results %>%
-      filter(raceID == race) %>%
+      filter(raceID == raceID) %>%
       arrange(score)
     
-    scores  = race$scores
+    scores  = race$score
     sailors = race$competitorID
     assert_that(length(sailors) == length(unique(sailors)),
                 msg = "ERROR IN createPairwiseComparison: a single competitor id can be present only once in a given race.")
@@ -45,10 +45,11 @@ createPairwiseComparisons = function(results){
         
         scoreA = scores[[i]]
         scoreB = scores[[j]]
-        isWin = ifelse(scoreA > scoreB, 1, ifelse(scoreA == scoreB, 0.5), 0)
-        scoreDiff = scoreA - scoreB
+        win = ifelse(scoreA < scoreB, 1, ifelse(scoreA == scoreB, 0.5, 0))
+        scoreDiff = scoreB - scoreA
         
-        matchups %<>% bind_rows(c(race, competitorA, competitorB, isWin, scoreDiff))
+        newRow = data.frame(raceID, competitorA, competitorB, win, scoreDiff)
+        matchups = rbind(matchups, newRow)
       }
     }
   }

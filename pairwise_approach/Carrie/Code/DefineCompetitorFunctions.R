@@ -6,23 +6,28 @@
 ### SUMMARY:  CREATE COMPETITOR OBJECT AND UPDATE FUNCTION
 ###############################################################################
 
-updateCompetitorScore = function(competitor, newRanking, regatta, raceID = 0){
+updateRatings = function(competitor, newRating, regatta, raceID = 0){
   ###IN:  competitor      Competitor object
-  ###     newRanking      Updated ranking
+  ###     newRating      Updated rating
   ###     regatta         Regatta Object containing regatta details
   ###     raceID          Number indicating which race this occurred in, 
-  ###                     0 if regatta level ranking
+  ###                     0 if regatta level rating
   ###OUT:                 updated competitor oject
   
-  competitor$currentRank = newRanking
-  competitor$rankings = rbind(c(regatta$day, regatta$id, regatta$name, raceID, newRanking),
-                              competitor$rankings)
+  newRow = data.frame(regatta$day, regatta$id, regatta$name, raceID, newRating)
+  names(newRow) = c("day", "id", "name", "raceID", "rating")
+  
+  newCompetitor = new("Competitor", 
+                      id = competitor[[1]]$id,
+                      name = competitor[[1]]$name,
+                      currentRating = newRating,
+                      ratings = rbind(competitor[[1]]$ratings, newRow))
     
-  return(competitor)
+  return(newCompetitor)
 }
 
 Competitor = setRefClass("Competitor",
                          fields = list(id = "character",
                                        name = "character",
-                                       currentRank = "numeric",
-                                       rankings = "data.frame"))
+                                       currentRating = "numeric",
+                                       ratings = "data.frame"))
