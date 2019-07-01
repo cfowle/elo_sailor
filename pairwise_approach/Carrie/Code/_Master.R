@@ -18,9 +18,9 @@ setwd("~/code/elo_sailor/pairwise_approach/Carrie/Code")
 USE_EXISTING_RATINGS = FALSE
 EXISTING_RATINGS_FILE = ""
 RACE_LEVEL = TRUE
-SCALE_K = TRUE
-K = 20
-START_RATING = 1500
+SCALE_K = FALSE
+K = 42
+START_RATING = 1000
 
 source("./DefineCompetitorFunctions.R")
 source("./DefineRegattaFunctions.R")

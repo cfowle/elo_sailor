@@ -20,39 +20,43 @@ college %<>%
 ##TODO: Import clean results dataset
 ##TODO: If using existing ratingss, import existing ratingss table
 
-##If starting fresh, create empty ratings list
+##If starting fresh, create existingRatings, pastRatings, competitors, and
+##regattas tables
 results = college
-existingRatings = list()
+existingRatings = data.frame(competitorID = character(),
+                             regattaID = character(),
+                             day = numeric(),
+                             rating = numeric())
+
+pastRatings = existingRatings
+
+competitors = data.frame(competitorID = character(),
+                         name = character())
 
 ##Get list of regattas
 regattaTable = results %>%
   select(regatta_id, day) %>%
   distinct() %>%
-  mutate(name = regatta_id)
-
-regattas = list()
-for(i in 1:nrow(regattaTable)) {
-  regatta = regattaTable[i,]
-  id = as.character(regatta$regatta_id)
-  day = regatta$day
-  name = id
-  
-  if(!is.na(id)) {
-    regattas[id] = newRegatta(id, day, name)
-  }
-}
+  mutate(name = regatta_id) %>%
+  rename(regattaID = regatta_id)
 
 ##Run ratingss
-for(regatta in regattas){
-  id = regatta$id
+for(i in 1:length(regattaTable)){
+  regatta = regattaTable[i,]
+  id = regatta$regattaID[[1]]
   regattaResults = results %>%
     filter(regatta_id == id)
-  existingRatings = updateExistingRatings(existingRatings, regatta, regattaResults)
+  existingRatings = updateExistingRatings(existingRatings,
+                                          competitors,
+                                          pastRatings,
+                                          regatta,
+                                          regattaResults)
 }
 
 ##TODO: Export results
-scaledratings = data.frame()
-for(competitor in existingRatings) {
+ratings = data.frame()
+for(i in 1:nrow(existingRatings)) {
+  competitor = existingRatings[i,]
   print(competitor)
-  scaledratings %<>% rbind(data.frame(competitor$id, competitor$currentRating))
+  ratings %<>% bind_rows(data.frame(competitor$competitorID, competitor$rating))
 }

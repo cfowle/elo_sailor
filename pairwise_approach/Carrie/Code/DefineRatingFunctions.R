@@ -6,49 +6,60 @@
 ### SUMMARY:  DEFINE FUNCTIONS THAT FOR THE RATING CREATION AND UPDATE PROCESS
 ###############################################################################
 
-addCompetitors = function(existingRatings, newCompetitors) {
+checkInputColumns = function(df, functionName, columnNames) {
+  ###CHECKS THAT DF HAS REQUIRED COLUMN NAMES 
+  ###INPUT: df            test dataframe
+  ###       functionName  string for error message
+  ###       columnNames   vector of required column names
+  
+  errorMessagePrefix = "ERROR IN "
+  errorMessageBody   = " : data frame must have column "
+  for(name in columnNames){
+    assert_that(name %in% colnames(df),
+                msg = paste0(errorMessagePrefix, functionName, errorMessageBody, name, "."))
+  }
+}
+
+addCompetitors = function(competitors, existingRatings, newCompetitors) {
   ###HANDLES THE CREATIONS OF NEW COMPETITOR OBJECTS
-  ###INPUTS:  exisitingRatings   list of ratings with competitor id as key
+  ###INPUTS:  competitors         competitors data frame with columns competitorID and name
+  ###         existingRatings     data frame with columns competitorID, regattaID, day, & rating
   ###         newCompetitors      data frame of newCompetitor details with columns
   ###                             competitorID, competitorName
   ###OUPUTS:                      updated ratings list
   
   ##check that newCompetitors object is as expected
-  columnNames = c("competitorName", "competitorID")
-  errorMessagePrefix = "ERROR IN addCompetitors: newCompetitors data frame must have column "
-  for(name in columnNames){
-    assert_that(name %in% colnames(newCompetitors), msg = paste0(errorMessagePrefix, name, "."))
-  }
+  columnNames = c("name", "competitorID")
+  checkInputColumns(newCompetitors, "addCompetitors", columnNames)
   
   ##create new competitor objects and add them to the ratings
-  updatedRatings = existingRatings
+  updatedCompetitors = competitors
   newCompetitors %<>% filter(!is.na(competitorID))
   if(nrow(newCompetitors) == 0){
     return(existingRatings)
   }
   
+  updatedCompetitors %<>% rbind(newCompetitors)
+  
+  updatedRatings = existingRatings
   for(i in 1:nrow(newCompetitors)){
-    competitor = newCompetitors[i,]
-    name = competitor$competitorName
-    id = competitor$competitorID
-    
-    ##TODO: Think about whether or not this is the start condition we want
+    competitorID = newCompetitors[i,1][[1]]
+    regattaID = "Initial Value"
+    day = 0
     rating = START_RATING
-    initialRow = data.frame(0, -1, "Initial Value", 0, rating)
-    names(initialRow) = c("day", "id", "name", "raceID", "rating")
     
-    updatedRatings[id] = Competitor(id = id,
-                                    name = name,
-                                    currentRating = rating,
-                                    ratings = initialRow)
+    initialRow = data.frame(competitorID, regattaID, day, rating)
+    updatedRatings = updatedRatings %>%
+      rbind(initialRow)
   }
   
-  return(updatedRatings)
+  output = list("competitors" = updatedCompetitors, "ratings" = updatedRatings)
+  return(output)
 }
 
 checkForMissingCompetitors = function(existingRatings, results) {
   ###GETS LIST OF COMPETITORS IN RESULTS BUT NOT EXISTINGratingS
-  ###INPUTS:  exisitingRatings   list of ratings with competitor id as key
+  ###INPUTS:  exisitingRatings    data frame with columns competitorID, regattaID, day, & rating
   ###         results             data frame of results
   ###OUPUTS:                      data frame of competitor details with entities
   ###                             results and not existing ratings
@@ -62,14 +73,16 @@ checkForMissingCompetitors = function(existingRatings, results) {
   competitorsTable = results %>%
     filter(competitorID %in% newCompetitors) %>%
     select(competitorID, competitorName) %>%
+    rename(name = competitorName) %>%
     distinct()
   
   return(competitorsTable)
 }
 
-processResult = function(existingRatings, result, regatta){
+processResult = function(existingRatings, pastRatings, result, regatta){
   ###UPDATES EXISITING ratingS GIVEN A RESULT
-  ###INPUTS:  exisitingRatings   list of ratings with competitor id as key
+  ###INPUTS:  exisitingRatings    data frame with columns competitorID, regattaID, day, & rating
+  ###         pastRatings         a dataframe with columns competitorID, regattaID, day, & rating
   ###         result              data frame of a single result with columns
   ###                             raceID, competitorA, competitorB, win, scoreDiff
   ###         regatta             a Regatta Object  
@@ -77,16 +90,13 @@ processResult = function(existingRatings, result, regatta){
   
   ##check that inputs conform to constraints
   columnNames = c("raceID", "competitorA", "competitorB", "win", "scoreDiff")
-  errorMessagePrefix = "ERROR IN processResult: result data frame must have column "
-  for(name in columnNames){
-    assert_that(name %in% colnames(result), msg = paste0(errorMessagePrefix, name, "."))
-  }
+  checkInputColumns(result, "processResult", columnNames)
   
   ##Get score prior to race
-  competitorA = result$competitorA[[1]]
-  competitorB = result$competitorB[[1]]
-  ratingA = c(existingRatings[[competitorA]]$currentRating)
-  ratingB = c(existingRatings[[competitorB]]$currentRating)
+  competitorA = as.character(result$competitorA[[1]])
+  competitorB = as.character(result$competitorB[[1]])
+  ratingA = c(filter(existingRatings, competitorID == competitorA)$rating[[1]])
+  ratingB = c(filter(existingRatings, competitorID == competitorB)$rating[[1]])
   
   ##Get K
   if(SCALE_K) {
@@ -103,47 +113,64 @@ processResult = function(existingRatings, result, regatta){
   print(competitorB)
   print(eloOutput)
   
-  ##Update ratings
-  updatedRatings = existingRatings
-  updatedRatings[[competitorA]] = updateRatings(existingRatings[competitorA],
-                                                       eloOutput[1, 1],
-                                                       regatta,
-                                                       result$raceID[[1]])
-  updatedRatings[[competitorB]] = updateRatings(existingRatings[competitorB],
-                                                       eloOutput[1, 2],
-                                                       regatta,
-                                                       result$raceID[[1]])
+  ##Move old ratings to pastRatings table
+  oldRows = existingRatings %>%
+    filter(competitorID %in% c(competitorA, competitorB))
   
-  return(updatedRatings)
+  pastRatings %<>% rbind(oldRows)
+  
+  ##Update ratings
+  updatedRatings = existingRatings %>%
+    filter(!(competitorID %in% c(competitorA, competitorB)))
+  
+  newRowA = data.frame(competitorA, regatta$regattaID[[1]], regatta$day[[1]], eloOutput[1, 1])
+  newRowB = data.frame(competitorB, regatta$regattaID[[1]], regatta$day[[1]], eloOutput[1, 2])
+  colnames(newRowA) = colnames(updatedRatings)
+  colnames(newRowB) = colnames(updatedRatings)
+  
+  updatedRatings %<>% 
+    rbind(newRowA) %>%
+    rbind(newRowB)
+  
+  output = list(current = updatedRatings, past = pastRatings)
+  return(output)
 }
 
-updateExistingRatings = function(existingRatings, regatta, results){
+updateExistingRatings = function(existingRatings, competitors, pastRatings, regatta, results){
   ###UPDATES EXISITING RATINGS GIVEN A SET OF RESULTS
-  ###INPUTS:  exisitingRatings   list of Ratings with competitor id as key
-  ###         regatta             Regatta object for results
+  ###INPUTS:  exisitingRatings    a dataframe with columns competitorID, regattaID, day, & rating
+  ###         competitors         a dataframe with columns competitorID and name
+  ###         pastRatings         a dataframe with columns competitorID, regattaID, day, & rating
+  ###         regatta             a dataframe with one row and columns regattaID, name, & day
   ###         results             data frame of results from a single regatta
   ###                             with columns raceID, competitorID,
   ###                             competitorName, place, and score
   ###OUPUTS:                      updated ratings list
   
   ##check that inputs meet spec
-  columnNames = c("raceID", "competitorID", "competitorName", "place", "score")
-  errorMessagePrefix = "ERROR IN processResult: result data frame must have column "
-  for(name in columnNames){
-    assert_that(name %in% colnames(results), msg = paste0(errorMessagePrefix, name, "."))
-  }
+  checkInputColumns(existingRatings, "updateExisitingRatings", c("competitorID", "regattaID", "day", "rating"))
+  checkInputColumns(competitors, "updateExisitingRatings", c("competitorID", "name"))
+  checkInputColumns(pastRatings, "updateExisitingRatings", c("competitorID", "regattaID", "day", "rating"))
+  checkInputColumns(regatta, "updateExisitingRatings", c("regattaID", "name", "day"))
+  assert_that(nrow(regatta) == 1, msg ="Error in updateExistingRatings: df regatta should only contain one row.")
   
   ##check for competitors not in existing ratings & update accordingly
   missingCompetitors = checkForMissingCompetitors(existingRatings, results)
-  updatedRatings     = addCompetitors(existingRatings, missingCompetitors)
+  output = addCompetitors(competitors, existingRatings, missingCompetitors)
+  updatedRatings = output[["ratings"]]
+  competitors = output[["competitors"]]
   
+  updatedRatings %<>% mutate(competitorID = as.character(competitorID),
+                             regattaID = as.character(regattaID))
   ##rewrite results pairwise
   pairwiseResults = createPairwiseComparisons(results)
   
   ##loop through results and update ratings
   for(i in 1:nrow(pairwiseResults)) {
     result = pairwiseResults[i, ]
-    updatedRatings = processResult(updatedRatings, result, regatta)
+    output = processResult(updatedRatings, pastRatings, result, regatta)
+    updatedRatings = output[["current"]]
+    pastRatings = output[["past"]]
   }
   
   return(updatedRatings)
