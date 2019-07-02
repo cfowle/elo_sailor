@@ -38,19 +38,22 @@ regattaTable = results %>%
   select(regatta_id, day) %>%
   distinct() %>%
   mutate(name = regatta_id) %>%
-  rename(regattaID = regatta_id)
+  rename(regattaID = regatta_id) %>%
+  filter(!is.na(regattaID))
 
 ##Run ratingss
-for(i in 1:length(regattaTable)){
+for(i in 1:nrow(regattaTable)){
   regatta = regattaTable[i,]
   id = regatta$regattaID[[1]]
   regattaResults = results %>%
     filter(regatta_id == id)
-  existingRatings = updateExistingRatings(existingRatings,
-                                          competitors,
-                                          pastRatings,
-                                          regatta,
-                                          regattaResults)
+  output = updateExistingRatings(existingRatings,
+                                 competitors,
+                                 pastRatings,
+                                 regatta,
+                                 regattaResults)
+  existingRatings = output[["current"]]
+  pastRatings = output[["past"]]
 }
 
 ##TODO: Export results

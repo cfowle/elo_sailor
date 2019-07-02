@@ -18,7 +18,7 @@ setwd("~/code/elo_sailor/pairwise_approach/Carrie/Code")
 USE_EXISTING_RATINGS = FALSE
 EXISTING_RATINGS_FILE = ""
 RACE_LEVEL = TRUE
-SCALE_K = FALSE
+SCALE_K = TRUE
 K = 42
 START_RATING = 1000
 
