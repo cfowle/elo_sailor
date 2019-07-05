@@ -233,16 +233,15 @@ class sailingGlicko2(Glicko2):
 
         #update the rankings in the database
         for i in range(0,numOfSailors):
-            print"old: " + str(self.rankedMembers[indexLst[i]]) + "    and new:" + str(rankingAdjustments[i])
             self.rankedMembers[indexLst[i]]= rankingAdjustments[i]
 
 
 ################################################################################
 ## testing workspace  ##########################################################
 ################################################################################
-sailorGlicko2TestDB = sailingGlicko2(tau=1.2) #create our glicko2 dB
+sailorGlicko2TestDB = sailingGlicko2(tau=1.0) #create our glicko2 dB
 
-with open('rankings.csv', 'rb') as csvfile: # open test data to get names of schools
+with open('rankings_mod.csv', 'rb') as csvfile: # open test data to get names of schools
     dictReader = csv.DictReader(csvfile)
 
 
@@ -254,7 +253,7 @@ with open('rankings.csv', 'rb') as csvfile: # open test data to get names of sch
 
 #get list of list of regatta results not worrying about ties
 seasonResults = []
-with open('neisa_only.csv', 'rb') as csvfile: 
+with open('neisa_only_mod.csv', 'rb') as csvfile: 
     dictReader = csv.DictReader(csvfile)
 
     regattaResults = []
