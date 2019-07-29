@@ -57,7 +57,7 @@ class sailingELO(Implementation):
         the race"""
         numOfSailors = len(results)
 
-        print results
+        #print results
 
         #from parent Implementation function recordMatch function
         k = len(self.__getPlayerList()) * 42

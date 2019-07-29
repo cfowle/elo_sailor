@@ -1,0 +1,320 @@
+"","regatta_id","day","school_coded","place","score"
+"1",1,7,"Apple Jacks",1,152
+"2",1,7,"Cap’n Crunch",2,159
+"3",1,7,"Cheerios",3,176
+"4",1,7,"Chex",4,212
+"5",1,7,"Coco Pebbles",5,226
+"6",1,7,"Cocoa Puffs",6,228
+"7",1,7,"Cookie Crisp",7,247
+"8",1,7,"Corn Flakes",8,249
+"9",1,7,"Fiber One",9,262
+"10",1,7,"Froot Loops",10,262
+"11",1,7,"Apple Jacks 2",11,292
+"12",1,7,"Frosted Flakes",12,328
+"13",1,7,"Fruity Pebbles",13,333
+"14",1,7,"Golden Grahams",14,345
+"15",1,7,"Grape Nuts",15,396
+"16",1,7,"Honey Bunches of Oats",16,479
+"17",2,7,"Honey Smacks",1,71
+"18",2,7,"Corn Flakes",2,74
+"19",2,7,"Cap’n Crunch",3,91
+"20",2,7,"Cookie Crisp",4,113
+"21",2,7,"Fruity Pebbles",5,119
+"22",2,7,"Golden Grahams",6,130
+"23",2,7,"Chex",7,150
+"24",2,7,"Kix",8,156
+"25",2,7,"Life",9,157
+"26",2,7,"Lucky Charms",10,189
+"27",2,7,"Honey Bunches of Oats",11,212
+"28",5,7,"Froot Loops",1,114
+"29",5,7,"Golden Grahams",2,121
+"30",5,7,"Froot Loops 2",3,122
+"31",5,7,"Frosted Flakes",4,122
+"32",5,7,"Fiber One",5,151
+"33",5,7,"Corn Flakes",6,164
+"34",5,7,"Fruity Pebbles",7,173
+"35",5,7,"Grape Nuts",8,192
+"36",5,7,"Apple Jacks",9,241
+"37",5,7,"Corn Flakes 2",10,254
+"38",5,7,"Grape Nuts 2",11,257
+"39",5,7,"Puffins",12,262
+"40",5,7,"Raisin Bran",13,263
+"41",5,7,"Resse’s Puffs",14,302
+"42",5,7,"Rice Krispies",15,307
+"43",6,14,"Coco Pebbles",1,19
+"44",6,14,"Froot Loops",2,46
+"45",6,14,"Corn Flakes",3,55
+"46",6,14,"Apple Jacks",4,58
+"47",6,14,"Fruity Pebbles",5,65
+"48",6,14,"Cheerios",6,65
+"49",6,14,"Cocoa Puffs",7,69
+"50",6,14,"Honey Smacks",8,71
+"51",6,14,"Golden Grahams",9,85
+"52",6,14,"Chex",10,87
+"53",6,14,"Cookie Crisp",11,96
+"54",6,14,"Honey Bunches of Oats",12,99
+"55",6,14,"Cap’n Crunch",13,101
+"56",6,14,"Frosted Flakes",14,102
+"57",6,14,"Fiber One",15,105
+"58",6,14,"Cheerios 2",16,114
+"59",6,14,"Grape Nuts",17,140
+"60",8,14,"Chex",1,132
+"61",8,14,"Corn Flakes",2,150
+"62",8,14,"Froot Loops",3,159
+"63",8,14,"Froot Loops 2",4,169
+"64",8,14,"Cap’n Crunch",5,177
+"65",8,14,"Frosted Flakes",6,181
+"66",8,14,"Corn Flakes 2",7,198
+"67",8,14,"Chex 2",8,206
+"68",8,14,"Cocoa Puffs",9,206
+"69",8,14,"Honey Smacks",10,221
+"70",8,14,"Coco Pebbles",11,229
+"71",8,14,"Honey Smacks 2",12,258
+"72",8,14,"Golden Grahams",13,261
+"73",8,14,"Grape Nuts",14,262
+"74",8,14,"Honey Bunches of Oats",15,271
+"75",8,14,"Life",16,286
+"76",8,14,"Kix",17,387
+"77",9,21,"Cocoa Puffs",1,137
+"78",9,21,"Chex",2,161
+"79",9,21,"Froot Loops",3,165
+"80",9,21,"Fiber One",4,170
+"81",9,21,"Apple Jacks",5,173
+"82",9,21,"Frosted Flakes",6,173
+"83",9,21,"Cheerios",7,173
+"84",9,21,"Honey Smacks",8,178
+"85",9,21,"Apple Jacks 2",9,199
+"86",9,21,"Coco Pebbles",10,203
+"87",9,21,"Cap’n Crunch",11,210
+"88",9,21,"Cookie Crisp",12,218
+"89",9,21,"Fruity Pebbles",13,232
+"90",9,21,"Corn Flakes",14,238
+"91",9,21,"Golden Grahams",15,244
+"92",9,21,"Fiber One 2",16,254
+"93",9,21,"Life",17,285
+"94",9,21,"Grape Nuts",18,301
+"95",10,21,"Corn Flakes",1,113
+"96",10,21,"Cap’n Crunch",2,181
+"97",10,21,"Corn Flakes 2",3,181
+"98",10,21,"Cocoa Puffs",4,227
+"99",10,21,"Froot Loops",5,240
+"100",10,21,"Chex",6,245
+"101",10,21,"Honey Smacks",7,268
+"102",10,21,"Cookie Crisp",8,279
+"103",10,21,"Cheerios",9,306
+"104",10,21,"Fiber One",10,307
+"105",10,21,"Apple Jacks",11,425
+"106",11,21,"Fruity Pebbles",1,120
+"107",11,21,"Honey Smacks",2,128
+"108",11,21,"Froot Loops",3,137
+"109",11,21,"Corn Flakes",4,147
+"110",11,21,"Frosted Flakes",5,155
+"111",11,21,"Cocoa Puffs",6,158
+"112",11,21,"Froot Loops 2",7,206
+"113",11,21,"Honey Smacks 2",8,208
+"114",11,21,"Chex",9,208
+"115",11,21,"Honey Bunches of Oats",10,212
+"116",11,21,"Grape Nuts",11,223
+"117",11,21,"Golden Grahams",12,226
+"118",11,21,"Corn Flakes 2",13,258
+"119",11,21,"Puffins",14,268
+"120",11,21,"Life",15,296
+"121",11,21,"Rice Krispies",16,365
+"122",11,21,"Shredded Wheat",17,402
+"123",12,21,"Frosted Flakes",1,59
+"124",12,21,"Golden Grahams",2,65
+"125",12,21,"Fruity Pebbles",3,67
+"126",12,21,"Fiber One",4,70
+"127",12,21,"Fruity Pebbles 2",5,77
+"128",12,21,"Corn Flakes",6,92
+"129",12,21,"Grape Nuts",7,103
+"130",12,21,"Fruity Pebbles 3",8,106
+"131",12,21,"Lucky Charms",9,118
+"132",12,21,"Apple Jacks",10,129
+"133",12,21,"Resse’s Puffs",11,142
+"134",12,21,"Special K",12,158
+"135",12,21,"Kix",13,177
+"136",12,21,"Total",14,184
+"137",12,21,"Shredded Wheat",15,204
+"138",12,21,"Life",16,206
+"139",12,21,"Weetabix",17,241
+"140",12,21,"Wheaties",18,300
+"141",13,28,"Apple Jacks",2,68
+"142",13,28,"Cookie Crisp",3,78
+"143",13,28,"Honey Smacks",4,83
+"144",13,28,"Frosted Flakes",5,85
+"145",13,28,"Cheerios",6,87
+"146",13,28,"Chex",7,88
+"147",13,28,"Cocoa Puffs",8,88
+"148",13,28,"Coco Pebbles",9,88
+"149",13,28,"Corn Flakes",10,94
+"150",13,28,"Cap’n Crunch",12,108
+"151",13,28,"Froot Loops",15,117
+"152",13,28,"Fruity Pebbles",19,148
+"153",14,28,"Cap’n Crunch",1,62
+"154",14,28,"Fruity Pebbles",2,76
+"155",14,28,"Apple Jacks",3,94
+"156",14,28,"Corn Flakes",4,103
+"157",14,28,"Cocoa Puffs",5,109
+"158",14,28,"Fiber One",6,111
+"159",14,28,"Froot Loops",10,154
+"160",14,28,"Cheerios",11,187
+"161",14,28,"Life",13,215
+"162",14,28,"Honey Bunches of Oats",14,218
+"163",14,28,"Frosted Flakes",15,230
+"164",16,28,"Golden Grahams",1,31
+"165",16,28,"Grape Nuts",2,33
+"166",16,28,"Corn Flakes",3,34
+"167",16,28,"Honey Bunches of Oats",4,61
+"168",16,28,"Kix",5,71
+"169",16,28,"Corn Flakes 2",6,72
+"170",16,28,"Life",7,72
+"171",16,28,"Resse’s Puffs",8,74
+"172",16,28,"Museli",9,95
+"173",16,28,"Weetabix",10,115
+"174",16,28,"Shredded Wheat",11,156
+"175",16,28,"Raisin Bran",12,196
+"176",17,35,"Fiber One",1,182
+"177",17,35,"Cheerios",3,200
+"178",17,35,"Chex",4,202
+"179",17,35,"Corn Flakes",6,215
+"180",17,35,"Coco Pebbles",8,259
+"181",17,35,"Frosted Flakes",9,271
+"182",17,35,"Honey Bunches of Oats",14,405
+"183",18,35,"Apple Jacks",1,87
+"184",18,35,"Froot Loops",3,138
+"185",18,35,"Cocoa Puffs",4,145
+"186",18,35,"Cap’n Crunch",7,157
+"187",18,35,"Honey Smacks",8,164
+"188",18,35,"Fruity Pebbles",10,179
+"189",18,35,"Cookie Crisp",11,188
+"190",18,35,"Golden Grahams",15,239
+"191",18,35,"Life",16,265
+"192",19,35,"Honey Smacks",1,92
+"193",19,35,"Fiber One",2,102
+"194",19,35,"Golden Grahams",3,119
+"195",19,35,"Cocoa Puffs",4,127
+"196",19,35,"Froot Loops",5,145
+"197",19,35,"Chex",6,159
+"198",19,35,"Grape Nuts",7,161
+"199",19,35,"Fruity Pebbles",8,161
+"200",19,35,"Corn Flakes",9,172
+"201",19,35,"Cookie Crisp",10,173
+"202",19,35,"Fiber One 2",11,193
+"203",19,35,"Cap’n Crunch",12,200
+"204",19,35,"Cookie Crisp 2",13,205
+"205",19,35,"Honey Bunches of Oats",14,236
+"206",19,35,"Apple Jacks",15,252
+"207",19,35,"Grape Nuts 2",16,263
+"208",19,35,"Resse’s Puffs",17,316
+"209",19,35,"Total",18,345
+"210",20,35,"Grape Nuts",1,38
+"211",20,35,"Corn Flakes",2,47
+"212",20,35,"Fiber One",3,50
+"213",20,35,"Corn Flakes 2",4,55
+"214",20,35,"Life",5,73
+"215",20,35,"Life",6,79
+"216",20,35,"Puffed Wheat",7,115
+"217",20,35,"Rice Krispies",8,121
+"218",20,35,"Kix",9,164
+"219",20,35,"Golden Grahams",10,176
+"220",22,42,"Cocoa Puffs",2,196
+"221",22,42,"Coco Pebbles",4,241
+"222",22,42,"Fruity Pebbles",5,252
+"223",22,42,"Cap’n Crunch",6,257
+"224",22,42,"Frosted Flakes",7,268
+"225",22,42,"Froot Loops",8,273
+"226",22,42,"Apple Jacks",9,277
+"227",22,42,"Corn Flakes",10,285
+"228",22,42,"Golden Grahams",11,308
+"229",22,42,"Cookie Crisp",13,343
+"230",22,42,"Cheerios",14,395
+"231",23,42,"Golden Grahams",1,80
+"232",23,42,"Chex",2,147
+"233",23,42,"Golden Grahams 2",3,183
+"234",23,42,"Life",4,211
+"235",23,42,"Honey Bunches of Oats",5,218
+"236",23,42,"Lucky Charms",6,275
+"237",23,42,"Corn Flakes",7,291
+"238",23,42,"Lucky Charms",8,334
+"239",23,42,"Weetabix",9,362
+"240",24,42,"Golden Grahams",1,33
+"241",24,42,"Grape Nuts",2,42
+"242",24,42,"Resse’s Puffs",3,71
+"243",24,42,"Apple Jacks",4,104
+"244",24,42,"Shredded Wheat",5,106
+"245",24,42,"Kix",6,134
+"246",24,42,"Special K",7,140
+"247",24,42,"Total",8,142
+"248",24,42,"Museli",9,164
+"249",24,42,"Weetabix",10,167
+"250",25,49,"Apple Jacks",1,246
+"251",25,49,"Chex",2,275
+"252",25,49,"Cheerios",5,290
+"253",25,49,"Honey Smacks",6,299
+"254",25,49,"Fiber One",8,314
+"255",25,49,"Froot Loops",9,320
+"256",25,49,"Cocoa Puffs",10,335
+"257",25,49,"Frosted Flakes",11,340
+"258",25,49,"Coco Pebbles",13,346
+"259",25,49,"Corn Flakes",15,420
+"260",25,49,"Cap’n Crunch",17,441
+"261",26,49,"Cookie Crisp",6,215
+"262",26,49,"Golden Grahams",9,244
+"263",26,49,"Honey Bunches of Oats",11,297
+"264",26,49,"Life",15,331
+"265",26,49,"Fruity Pebbles",17,366
+"266",27,49,"Fruity Pebbles",1,161
+"267",27,49,"Cap’n Crunch",2,219
+"268",27,49,"Froot Loops",3,302
+"269",27,49,"Honey Smacks",4,310
+"270",27,49,"Chex",5,328
+"271",27,49,"Honey Bunches of Oats",6,335
+"272",27,49,"Frosted Flakes",7,363
+"273",27,49,"Apple Jacks",8,366
+"274",27,49,"Coco Pebbles",9,368
+"275",27,49,"Fiber One",10,424
+"276",27,49,"Corn Flakes",11,439
+"277",27,49,"Fiber One 2",12,446
+"278",27,49,"Cheerios",13,462
+"279",27,49,"Golden Grahams",14,472
+"280",27,49,"Cookie Crisp",15,479
+"281",27,49,"Cocoa Puffs",16,485
+"282",27,49,"Grape Nuts",17,509
+"283",27,49,"Life",18,578
+"284",27,49,"Lucky Charms",19,602
+"285",27,49,"Shredded Wheat",20,735
+"286",28,49,"Corn Flakes",1,33
+"287",28,49,"Golden Grahams",2,44
+"288",28,49,"Grape Nuts",3,64
+"289",28,49,"Shredded Wheat",4,75
+"290",28,49,"Special K",5,78
+"291",28,49,"Rice Krispies",6,108
+"292",28,49,"Museli",7,117
+"293",28,49,"Apple Jacks",8,117
+"294",28,49,"Resse’s Puffs",9,123
+"295",28,49,"Puffed Wheat",10,146
+"296",28,49,"Weetabix",11,147
+"297",29,56,"Apple Jacks",1,147
+"298",29,56,"Coco Pebbles",2,165
+"299",29,56,"Cocoa Puffs",3,180
+"300",29,56,"Froot Loops",4,187
+"301",29,56,"Fiber One",5,199
+"302",29,56,"Chex",6,201
+"303",29,56,"Honey Smacks",7,210
+"304",29,56,"Corn Flakes",8,232
+"305",29,56,"Cookie Crisp",9,246
+"306",29,56,"Cheerios",10,260
+"307",29,56,"Cap’n Crunch",11,268
+"308",29,56,"Fruity Pebbles",12,280
+"309",29,56,"Frosted Flakes",13,297
+"310",29,56,"Golden Grahams",14,344
+"311",29,56,"Honey Bunches of Oats",15,359
+"312",29,56,"Life",16,379
+"313",29,56,"Grape Nuts",17,394
+"314",29,56,"Lucky Charms",18,448
+"315",30,56,"Kix",1,79
+"316",30,56,"Resse’s Puffs",2,87
+"317",30,56,"Weetabix",3,109
+"318",30,56,"Shredded Wheat",4,131
+"319",30,56,"Rice Krispies",5,144
