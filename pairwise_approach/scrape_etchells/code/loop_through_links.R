@@ -12,12 +12,19 @@ links %<>%
   mutate(year = str_extract(year, "^[0-9]*"))
 
 ##for each link scrape the scores
+all_scores = data.frame()
 for(i in 1:nrow(links)) {
   row = links[i,]
   link = row$link[[1]]
-  scores = ifelse(str_detect("yachtscoring"),
-                  scrape_yacht_scoring(row),
-                  scrape_etchells_fleet20(row))
+  print(link)
+  
+  if(str_detect(link, "yachtscoring")) {
+    scores = scrape_yacht_scoring(row)
+  } else {
+    scores = scrap_etchells_fleet20(row)
+  }
+  
+  all_scores %<>% bind_rows(scores)
   
   ##TODO: Pull everything together
 }
