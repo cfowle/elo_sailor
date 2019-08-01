@@ -1,0 +1,338 @@
+"","competitorID","regattaID","day","rating"
+"1","Yale University","0",0,1000
+"2","Boston University","0",0,1000
+"3","Massachusetts Institute of Technology","0",0,1000
+"4","Bowdoin College","0",0,1000
+"5","Dartmouth College","0",0,1000
+"6","Harvard University","0",0,1000
+"7","Connecticut College","0",0,1000
+"8","Tufts University","0",0,1000
+"9","Brown University","0",0,1000
+"10","Roger Williams University","0",0,1000
+"11","U. S. Coast Guard Academy","0",0,1000
+"12","University of Rhode Island","0",0,1000
+"13","University of Vermont","0",0,1000
+"14","Salve Regina University","0",0,1000
+"15","Northeastern University","0",0,1000
+"16","Boston College","0",0,1000
+"17","Tufts University","1",17782,1000
+"18","Boston University","1",17782,1120
+"19","Connecticut College","1",17782,1020
+"20","University of Rhode Island","1",17782,920
+"21","University of Vermont","1",17782,900
+"22","Bowdoin College","1",17782,1080
+"23","Bates College","0",0,1000
+"24","Massachusetts Maritime Academy","0",0,1000
+"25","Maine Maritime Academy","0",0,1000
+"26","Northeastern University","1",17782,860
+"27","Brown University","1",17782,970
+"28","Yale University","1",17782,1140
+"29","Dartmouth College","1",17782,1060
+"30","Boston University","2",17782,1142.29941757356
+"31","Roger Williams University","1",17782,970
+"32","U. S. Coast Guard Academy","1",17782,940
+"33","Massachusetts Institute of Technology","1",17782,1100
+"34","Bowdoin College","2",17782,1033.45274933484
+"35","Boston College","2",17782,1097.27177672515
+"36","Northeastern University","2",17782,798.229045275005
+"37","Tufts University","2",17782,1077.27177672515
+"38","University of Rhode Island","2",17782,961.329990714034
+"39","Maine Maritime Academy","2",17782,917.271776725155
+"40","Connecticut College","2",17782,1051.20707367156
+"41","Massachusetts Maritime Academy","2",17782,937.271776725155
+"42","Roger Williams University","3",17782,964.374596665478
+"43","University of Vermont","2",17782,927.122839805222
+"44","U. S. Coast Guard Academy","3",17782,919.788535606641
+"45","Brown University","3",17782,1034.37459666548
+"46","Tufts University","4",17782,1077.83722512255
+"47","University of Rhode Island","4",17782,956.520075361479
+"48","Salve Regina University","1",17782,880
+"49","Yale University","3",17782,1172.38907108923
+"50","Bentley University","0",0,1000
+"51","University of Connecticut","0",0,1000
+"52","McGill University","0",0,1000
+"53","Wentworth Institute of Technology","0",0,1000
+"54","Dartmouth College","3",17782,1077.34365293997
+"55","Roger Williams University","5",17782,1084.01316925254
+"56","Tufts University","5",17782,1080.43034132191
+"57","Yale University","5",17782,1087.55100614344
+"58","Massachusetts Institute of Technology","3",17782,1029.75376341978
+"59","University of Rhode Island","5",17782,978.742059962638
+"60","Harvard University","1",17782,1040
+"61","Boston College","4",17782,1123.8041036352
+"62","University of Vermont","5",17782,1038.90384636844
+"63","Bowdoin College","4",17782,1093.16762486341
+"64","Connecticut College","4",17782,987.17224318996
+"65","Northeastern University","4",17782,855.445191882822
+"66","Boston University","3",17782,1124.27520118699
+"67","U. S. Coast Guard Academy","5",17782,1013.9181831259
+"68","Brown University","5",17782,1070.91004398939
+"69","Salve Regina University","5",17782,906.51671570385
+"70","Harvard University","6",17789,1069.14465031492
+"71","Boston College","6",17789,1096.48746912735
+"72","Brown University","6",17789,926.411691736217
+"73","Boston University","6",17789,996.760502890789
+"74","Yale University","6",17789,1155.77186514256
+"75","U. S. Coast Guard Academy","6",17789,914.576557975036
+"76","Roger Williams University","6",17789,1193.7759675693
+"77","Tufts University","6",17789,1171.75821431303
+"78","University of Rhode Island","6",17789,1064.7184992289
+"79","Connecticut College","6",17789,959.511969103127
+"80","Bowdoin College","6",17789,1038.94831206424
+"81","Tufts University","7",17789,1091.46753702742
+"82","Roger Williams University","7",17789,1128.19408996272
+"83","Boston University","7",17789,1042.21573408625
+"84","U. S. Coast Guard Academy","7",17789,940.538197219969
+"85","Harvard University","7",17789,1155.37983894134
+"86","Boston College","7",17789,1155.45550308359
+"87","Dartmouth College","6",17789,1210.02249847302
+"88","University of Vermont","6",17789,1028.53331047071
+"89","Salve Regina University","6",17789,812.18449389881
+"90","Northeastern University","6",17789,859.912503640695
+"91","Massachusetts Maritime Academy","4",17782,877.583025067946
+"92","Bates College","2",17782,957.271776725155
+"93","Harvard University","8",17789,1132.69731701982
+"94","Bowdoin College","8",17789,1153.90187847255
+"95","Roger Williams University","8",17789,1173.92939898218
+"96","Brown University","7",17789,1009.56553480061
+"97","Massachusetts Institute of Technology","6",17789,1093.42864103753
+"98","U. S. Coast Guard Academy","8",17789,1008.02098847941
+"99","Yale University","7",17789,1139.43672218696
+"100","Boston College","8",17789,1112.75000274054
+"101","Dartmouth College","8",17789,1131.50877946193
+"102","Boston University","8",17789,1096.07628478326
+"103","Connecticut College","7",17789,894.5289480379
+"104","University of Rhode Island","7",17789,992.135282054455
+"105","Tufts University","8",17789,1169.00632246129
+"106","University of Vermont","8",17789,986.973483824741
+"107","Massachusetts Maritime Academy","8",17789,824.465268660394
+"108","Salve Regina University","8",17789,817.117691154732
+"109","Tufts University","9",17796,1029.97881047243
+"110","Boston University","9",17796,1046.42079750475
+"111","Harvard University","9",17796,1248.03831738253
+"112","Roger Williams University","9",17796,1233.00499201183
+"113","Bowdoin College","9",17796,1240.77544861827
+"114","Boston College","9",17796,1096.21510478726
+"115","Connecticut College","9",17796,905.534333732818
+"116","Massachusetts Institute of Technology","9",17796,1124.87123319778
+"117","Brown University","9",17796,1115.93712345426
+"118","Yale University","9",17796,1152.06557512252
+"119","University of Rhode Island","9",17796,945.644231615421
+"120","Boston College","10",17796,1092.68853759848
+"121","Roger Williams University","10",17796,1233.83450983829
+"122","Tufts University","10",17796,1143.60600820308
+"123","U. S. Coast Guard Academy","9",17796,1075.02848364603
+"124","Harvard University","10",17796,1265.21006223867
+"125","Bowdoin College","10",17796,1219.70382119879
+"126","Northeastern University","8",17789,831.908918645216
+"127","Salve Regina University","9",17796,753.49196986702
+"128","University of Vermont","9",17796,902.577821922958
+"129","Bentley University","5",17782,947.855393611994
+"130","Massachusetts Maritime Academy","9",17796,778.628359134423
+"131","Wentworth Institute of Technology","5",17782,887.855393611994
+"132","University of Massachusetts at Amherst","0",0,1000
+"133","U. S. Coast Guard Academy","11",17796,1101.72757095609
+"134","University of Vermont","11",17796,885.952304855758
+"135","University of Rhode Island","11",17796,1095.06724712145
+"136","Brown University","10",17796,1047.17636053351
+"137","Tufts University","11",17796,1168.76595909817
+"138","Salve Regina University","11",17796,799.794325156572
+"139","Maine Maritime Academy","4",17782,901.776476772691
+"140","Yale University","10",17796,1053.70570171076
+"141","McGill University","5",17782,907.855393611994
+"142","Fairfield University","0",0,1000
+"143","Bates College","8",17789,859.350485975799
+"144","Wesleyan University","0",0,1000
+"145","University of Massachusetts at Amherst","11",17796,871.421953341757
+"146","Massachusetts Maritime Academy","11",17796,758.475567676012
+"147","Middlebury College","0",0,1000
+"148","Providence College","0",0,1000
+"149","Yale University","12",17796,1027.53781147976
+"150","Connecticut College","10",17796,927.301100961525
+"151","Boston College","11",17796,1173.70688972057
+"152","U. S. Coast Guard Academy","12",17796,1196.9403319141
+"153","Massachusetts Institute of Technology","10",17796,1073.73394027814
+"154","Bowdoin College","11",17796,1163.13569384124
+"155","Dartmouth College","9",17796,1087.32994168801
+"156","Harvard University","11",17796,1217.0689193765
+"157","Tufts University","12",17796,1160.44270755714
+"158","Boston University","10",17796,1135.8816937232
+"159","Roger Williams University","11",17796,1253.54928803812
+"160","University of Rhode Island","12",17796,1152.78601364906
+"161","Boston University","13",17803,1064.686100747
+"162","University of Rhode Island","13",17803,1036.06913201517
+"163","Yale University","13",17803,1170.78875947325
+"164","Tufts University","13",17803,1101.23077350018
+"165","Harvard University","13",17803,1179.74076418834
+"166","Brown University","12",17796,1103.62728277012
+"167","Roger Williams University","13",17803,1125.10690226224
+"168","Massachusetts Institute of Technology","13",17803,1122.66094552036
+"169","Massachusetts Maritime Academy","12",17796,728.190620724554
+"170","Northeastern University","11",17796,876.92689463163
+"171","U. S. Coast Guard Academy","13",17803,1225.95994749148
+"172","Tufts University","14",17803,1133.74566730213
+"173","Roger Williams University","14",17803,1090.90797398871
+"174","University of Vermont","12",17796,1049.0291405891
+"175","Boston College","13",17803,1230.18923426448
+"176","Harvard University","14",17803,1170.49118074037
+"177","Brown University","14",17803,1095.46693929124
+"178","Northeastern University","14",17803,847.297055435797
+"179","Boston University","14",17803,1167.48277687915
+"180","Yale University","14",17803,1203.95851269977
+"181","Salve Regina University","12",17796,915.573957366501
+"182","University of Rhode Island","14",17803,1126.82342945043
+"183","Massachusetts Institute of Technology","14",17803,1069.14781297677
+"184","Maine Maritime Academy","12",17796,958.444181897832
+"185","Bentley University","11",17796,896.552048803273
+"186","Massachusetts Maritime Academy","14",17803,745.013788087225
+"187","Middlebury College","12",17796,855.799791701354
+"188","University of Massachusetts at Amherst","12",17796,820.295266000657
+"189","University of Vermont","15",17803,1158.91223687073
+"190","Salve Regina University","15",17803,940.061299332269
+"191","Tufts University","15",17803,1248.8987136763
+"192","Northeastern University","15",17803,957.153647837689
+"193","Bates College","12",17796,852.964909880321
+"194","Massachusetts Maritime Academy","15",17803,727.211130366437
+"195","McGill University","12",17796,922.037956176018
+"196","Sacred Heart University","0",0,1000
+"197","Middlebury College","15",17803,782.642974386938
+"198","University of Massachusetts at Amherst","15",17803,739.41056387756
+"199","University of Connecticut","5",17782,927.855393611994
+"200","Brown University","15",17803,1126.09451481975
+"201","Massachusetts Institute of Technology","15",17803,990.648087042808
+"202","Bowdoin College","13",17803,1143.04765157678
+"203","Tufts University","16",17803,1236.71207650808
+"204","Dartmouth College","13",17803,1091.9109093181
+"205","U. S. Coast Guard Academy","14",17803,1084.65298647275
+"206","Northeastern University","16",17803,989.224112126104
+"207","Yale University","15",17803,1132.45790272566
+"208","Roger Williams University","15",17803,1203.40831794067
+"209","Harvard University","15",17803,1191.35831369427
+"210","Boston University","15",17803,1129.49386513374
+"211","Boston College","15",17803,1249.50470767195
+"212","University of Rhode Island","15",17803,1044.73636389179
+"213","Connecticut College","13",17803,1078.02321186999
+"214","University of Vermont","16",17803,1202.77988532957
+"215","Massachusetts Maritime Academy","16",17803,778.23542316697
+"216","Boston College","18",17810,1220.00028020265
+"217","Brown University","17",17810,1180.03480451734
+"218","University of Vermont","18",17810,1123.62537436789
+"219","Harvard University","18",17810,1214.81032035774
+"220","Roger Williams University","18",17810,1244.11109790228
+"221","Bowdoin College","17",17810,1153.78181663003
+"222","Salve Regina University","16",17803,1016.71173813504
+"223","University of Rhode Island","18",17810,1041.91776041973
+"224","Tufts University","17",17810,1210.72311918264
+"225","Connecticut College","18",17810,1047.74098667516
+"226","Boston University","18",17810,1147.31405385765
+"227","Northeastern University","17",17810,948.84515186927
+"228","Yale University","18",17810,1209.58647828722
+"229","McGill University","16",17803,903.542544027178
+"230","Wesleyan University","12",17796,915.799791701354
+"231","Salve Regina University","19",17810,1061.41291534479
+"232","Tufts University","19",17810,1150.95164661265
+"233","Brown University","19",17810,1271.78300314703
+"234","Massachusetts Maritime Academy","18",17810,760.891639354282
+"235","University of Massachusetts at Dartmouth","0",0,1000
+"236","Wentworth Institute of Technology","11",17796,815.888848515215
+"237","Bates College","16",17803,893.000841205556
+"238","University of Vermont","19",17810,1217.21802344489
+"239","Boston College","19",17810,1316.82374026956
+"240","Dartmouth College","17",17810,1072.37895795013
+"241","Harvard University","19",17810,1253.53374747478
+"242","Dartmouth College","21",17851,1068.445238446
+"243","University of Rhode Island","19",17810,1077.18084211564
+"244","Boston University","19",17810,1071.66604772548
+"245","U. S. Coast Guard Academy","17",17810,1046.50999139953
+"246","Roger Williams University","19",17810,1252.28803010425
+"247","Yale University","19",17810,1070.23491216229
+"248","Tufts University","20",17810,1177.71465801871
+"249","University of Vermont","20",17810,1112.97116459705
+"250","Connecticut College","19",17810,1030.79148150869
+"251","Massachusetts Institute of Technology","17",17810,1050.01649631545
+"252","University of Vermont","22",17817,1051.7470694414
+"253","Bowdoin College","19",17810,1175.62365403347
+"254","Massachusetts Maritime Academy","20",17810,814.780082924576
+"255","Northeastern University","19",17810,927.453816988077
+"256","Maine Maritime Academy","15",17803,905.866642252959
+"257","Tufts University","22",17817,1117.19611823173
+"258","Middlebury College","16",17803,760.679869980687
+"259","University of Vermont","23",17817,1096.85533719123
+"260","Salve Regina University","20",17810,1124.22650398692
+"261","McGill University","19",17810,856.539761069295
+"262","Yale University","22",17817,1061.8963499102
+"263","University of Massachusetts at Amherst","16",17803,707.688797668003
+"264","Bates College","20",17810,866.270529917866
+"265","Fairfield University","12",17796,955.799791701354
+"266","Wesleyan University","19",17810,845.043696132286
+"267","Sacred Heart University","16",17803,940.782115515727
+"268","Middlebury College","23",17817,733.527354432692
+"269","Yale University","24",17817,1057.33928798708
+"270","Bowdoin College","23",17817,1181.8034832581
+"271","Massachusetts Institute of Technology","22",17817,967.698388354784
+"272","Boston College","21",17851,1320.75745977369
+"273","Brown University","20",17810,1259.31728025222
+"274","Roger Williams University","22",17817,1211.12846480481
+"275","Harvard University","22",17817,1312.05099694773
+"276","U. S. Coast Guard Academy","22",17817,1085.22714191138
+"277","Dartmouth College","22",17817,1160.64260275931
+"278","Tufts University","23",17817,1051.85582632559
+"279","Boston University","22",17817,1122.8985742939
+"280","Connecticut College","22",17817,974.108992016224
+"281","University of Vermont","24",17817,1144.70076352268
+"282","Northeastern University","23",17817,933.778773691189
+"283","Massachusetts Maritime Academy","23",17817,859.650230448961
+"284","University of Rhode Island","22",17817,1146.75791119641
+"285","University of Rhode Island","26",17824,1089.85420390527
+"286","Boston University","25",17824,1032.84226374073
+"287","Roger Williams University","25",17824,1195.64868423136
+"288","Boston College","25",17824,1315.96855778294
+"289","Bowdoin College","25",17824,1254.72718928289
+"290","Northeastern University","26",17824,943.715667093645
+"291","U. S. Coast Guard Academy","25",17824,1065.87679713519
+"292","Yale University","25",17824,1185.69269235808
+"293","Dartmouth College","25",17824,1099.68346875913
+"294","Brown University","25",17824,1250.42774139179
+"295","Tufts University","25",17824,1001.69485348425
+"296","Massachusetts Institute of Technology","25",17824,1078.74396397216
+"297","University of Vermont","26",17824,1148.0360539234
+"298","Connecticut College","26",17824,1018.92027710032
+"299","Harvard University","25",17824,1249.41329453007
+"300","Salve Regina University","24",17817,1146.46330769938
+"301","Massachusetts Maritime Academy","26",17824,858.470468852833
+"302","Maine Maritime Academy","23",17817,895.876248505126
+"303","University of Massachusetts at Amherst","24",17817,766.596535709963
+"304","Tufts University","27",17824,1021.43213474497
+"305","University of Vermont","27",17824,1059.22671263293
+"306","Salve Regina University","27",17824,998.388594663881
+"307","University of Massachusetts at Amherst","27",17824,713.350074035527
+"308","Fairfield University","24",17817,916.514350856511
+"309","Wentworth Institute of Technology","20",17810,821.746683160992
+"310","Sacred Heart University","24",17817,865.23647581888
+"311","Yale University","27",17824,1179.54258197168
+"312","McGill University","24",17817,921.978388910589
+"313","University of Massachusetts at Dartmouth","20",17810,994.120014766082
+"314","Middlebury College","24",17817,687.195084993792
+"315","Yale University","28",17824,1087.05355939795
+"316","Dartmouth College","27",17824,1113.67310669992
+"317","Harvard University","27",17824,1075.53024255737
+"318","Roger Williams University","27",17824,1285.01278241398
+"319","Brown University","27",17824,1176.12433300036
+"320","Bowdoin College","27",17824,1278.65055873864
+"321","Boston College","27",17824,1336.22967476453
+"322","Tufts University","28",17824,1095.65829861468
+"323","Connecticut College","27",17824,970.811460520237
+"324","Massachusetts Institute of Technology","27",17824,1042.65736764837
+"325","Boston University","27",17824,1218.30781587463
+"326","University of Rhode Island","27",17824,1268.5039879681
+"327","U. S. Coast Guard Academy","27",17824,1135.87197262728
+"328","University of Vermont","28",17824,1103.74010355857
+"329","Northeastern University","27",17824,1088.74433684432
+"330","Massachusetts Maritime Academy","27",17824,816.481656856297
+"331","Salve Regina University","28",17824,1038.73375600462
+"332","Maine Maritime Academy","27",17824,820.112874895492
+"333","Bates College","24",17817,869.313956180894
+"334","McGill University","28",17824,863.188145756838
+"335","Middlebury College","28",17824,646.488747397357
+"336","University of Massachusetts at Amherst","28",17824,807.223392650437
+"337","Wentworth Institute of Technology","28",17824,849.8913098663
