@@ -28,9 +28,9 @@ createPairwiseComparisons = function(results){
   
   ##loop through results to create pairwise comparison
   races = unique(results$raceID)
-  for(raceID in races) {
+  for(id in races) {
     race = results %>%
-      filter(raceID == raceID) %>%
+      filter(raceID == id) %>%
       arrange(score)
     
     scores  = race$score
@@ -48,11 +48,11 @@ createPairwiseComparisons = function(results){
         win = ifelse(scoreA < scoreB, 1, ifelse(scoreA == scoreB, 0.5, 0))
         scoreDiff = scoreB - scoreA
         
-        newRow = data.frame(raceID, competitorA, competitorB, win, scoreDiff)
+        newRow = data.frame(id, competitorA, competitorB, win, scoreDiff)
         matchups = rbind(matchups, newRow)
       }
     }
   }
   
-  return(matchups)
+  matchups %>% rename(raceID = id)
 }

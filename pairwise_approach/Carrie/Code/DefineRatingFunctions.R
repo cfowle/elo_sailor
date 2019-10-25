@@ -36,7 +36,7 @@ addCompetitors = function(competitors, existingRatings, newCompetitors) {
   updatedCompetitors = competitors
   newCompetitors %<>% filter(!is.na(competitorID))
   if(nrow(newCompetitors) == 0){
-    return(existingRatings)
+    return(list(ratings = existingRatings, competitors = competitors))
   }
   
   updatedCompetitors %<>% rbind(newCompetitors)
@@ -65,7 +65,7 @@ checkForMissingCompetitors = function(existingRatings, results) {
   ###                             results and not existing ratings
   
   ##get list of competitors in each input
-  ratingsCompetitors = names(existingRatings)
+  ratingsCompetitors = existingRatings$competitorID
   resultsCompetitors  = unique(results$competitorID)
   
   ##find difference and return details table
@@ -79,7 +79,7 @@ checkForMissingCompetitors = function(existingRatings, results) {
   return(competitorsTable)
 }
 
-processRace = function(existingRatings, pastRatings, results, regatta){
+processRace = function(existingRatings, pastRatings, results, regatta, competitors){
   ###UPDATES EXISITING RATINGS GIVEN RESULTS FROM A GIVEN RACE
   ###INPUTS:  exisitingRatings    data frame with columns competitorID, regattaID, day, & rating
   ###         pastRatings         a dataframe with columns competitorID, regattaID, day, & rating
@@ -96,17 +96,17 @@ processRace = function(existingRatings, pastRatings, results, regatta){
     output = processResult(existingRatings, result)
     
     updateValues[competitorA] = ifelse(is.numeric(updateValues[[competitorA]]),
-                                       updateValues[[competitorA]] + output[["competitorA"]],
+                                       c(updateValues[[competitorA]], output[["competitorA"]]),
                                        output[["competitorA"]])
     updateValues[competitorB] = ifelse(is.numeric(updateValues[[competitorB]]),
-                                       updateValues[[competitorB]] + output[["competitorB"]],
+                                       c(updateValues[[competitorB]],output[["competitorB"]]),
                                        output[["competitorB"]])
   }
 
   updatedRatings = existingRatings
   for(i in 1:length(updateValues)) {
     id = names(updateValues)[i]
-    update = updateValues[[i]]
+    update = mean(updateValues[[i]]) + CORRECTION_VALUE
     
     competitorRow = filter(existingRatings, competitorID == id)
     pastValue = competitorRow$rating[[1]]
@@ -117,7 +117,6 @@ processRace = function(existingRatings, pastRatings, results, regatta){
     competitorID = id
     newRow = data.frame(competitorID, regattaID, day, rating)
     competitorID = NULL
-    print(newRow)
     
     pastRatings %<>% rbind(competitorRow)
     updatedRatings %<>%
@@ -125,8 +124,9 @@ processRace = function(existingRatings, pastRatings, results, regatta){
       rbind(newRow)
   }
   
-  output = list(current = updatedRatings, past = pastRatings)
-  return(output)
+  output = list(current = updatedRatings,
+                past = pastRatings,
+                competitors = competitors)
 }
 processResult = function(existingRatings, result){
   ###UPDATES EXISITING ratingS GIVEN A RESULT
@@ -156,12 +156,12 @@ processResult = function(existingRatings, result){
   ##Run Elo update function
   win = c(result$win[[1]])
   updateValue = elo.update(win, ratingA, ratingB, k = k)
-  eloOutput = list(competitorA = 21, competitorB = -21)
+  eloOutput = list(competitorA = updateValue, competitorB = -1*updateValue)
   
   return(eloOutput)
 }
 
-updateExistingRatings = function(existingRatings, competitors, pastRatings, regatta, results){
+updateExistingRatings = function(existingRatings, competitors, pastRatings, regatta, results, pairwiseResults = NULL){
   ###UPDATES EXISITING RATINGS GIVEN A SET OF RESULTS
   ###INPUTS:  exisitingRatings    a dataframe with columns competitorID, regattaID, day, & rating
   ###         competitors         a dataframe with columns competitorID and name
@@ -188,23 +188,12 @@ updateExistingRatings = function(existingRatings, competitors, pastRatings, rega
   updatedRatings %<>% mutate(competitorID = as.character(competitorID),
                              regattaID = as.character(regattaID))
   ##rewrite results pairwise
-  pairwiseResults = createPairwiseComparisons(results)
-  
-  races = pairwiseResults %>%
-    select(raceID) %>%
-    distinct()
-  ##loop through races and update ratings
-  for(i in 1:nrow(races)) {
-    raceID = races[i, "raceID"]
-    regattaID = races[i, "regattaID"]
-    
-    selectedResults = pairwiseResults %>%
-      filter(raceID == raceID)
-    
-    output = processRace(updatedRatings, pastRatings, selectedResults, regatta)
-    updatedRatings = output[["current"]]
-    pastRatings = output[["past"]]
+  if(is.null(pairwiseResults)) {
+    pairwiseResults = createPairwiseComparisons(results)
   }
+  
+  ##update rankings based of regatta
+  output = processRace(updatedRatings, pastRatings, pairwiseResults, regatta, competitors)
   
   return(output)
 }

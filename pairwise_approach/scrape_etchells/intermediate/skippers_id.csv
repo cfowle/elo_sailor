@@ -32,7 +32,7 @@
 31,george andreadis,efyra 3,andreadis,11
 32,andreadis,efyra 3,andreadis,
 33,stratis andreadis,efyra 3,andreadis,12
-34,georgeÂ andreadis,efyra 3,andreadis,11
+34,georgeÎ_andreadis,efyra 3,andreadis,11
 35,g andreadis,efyra 3,andreadis,11
 36,stratis andreadis,efyra 1,andreadis,12
 37,razmilovic ante,NA,ante,13
@@ -120,8 +120,8 @@
 119,glenn burton,firing line,burton,50
 120,bruce burton,gone....gray,burton,50
 121,bruce burton,gonegray,burton,50
-122,bruce burton,goneï¿_gray,burton,50
-123,bruce burton,goneâ€_gray,burton,50
+122,bruce burton,gone´è_gray,burton,50
+123,bruce burton,gone_—_gray,burton,50
 124,bruce & glenn burton,gone,burton,50
 125,bruce burton,gone,burton,50
 126,glenn & bruce burton,gone,burton,50
@@ -223,8 +223,8 @@
 222,william douglass,goombay smash,douglass,103
 223,ethan doyle,cougar,doyle,104
 224,robbie doyle,no time iv,doyle,105
-225,"robbie  doyle","as  easy as Ã¶",doyle,105
-226,robbie doyle,as easy as â€_,doyle,105
+225,"robbie  doyle","as  easy as ’_",doyle,105
+226,robbie doyle,as easy as _—_,doyle,105
 227,drake,desparate,drake,106
 228,drake,desperate,drake,106
 229,drake,royal ocean racing club,drake,106
@@ -282,12 +282,12 @@
 281,francisco,usa 1264,francisco,127
 282,george francisco,usa 1264,francisco,127
 283,g francisco,usa 1264,francisco,127
-284,david franks,strait dealer usa,franks,128
-285,david franks,strait dealer,franks,128
-286,david franks,strait dealer 1431,franks,128
-287,david franks,usa 1266,franks,128
-288,david franks,hancock,franks,128
-289,david franks,gbr 1409,franks,128
+284,david franks,strait dealer usa,franks,
+285,david franks,strait dealer,franks,
+286,david franks,strait dealer 1431,franks,
+287,david franks,usa 1266,franks,
+288,david franks,hancock,franks,
+289,david franks,gbr 1409,franks,
 290,henry frazer,usa 102,frazer,129
 291,michael frerker,brass monkey,frerker,130
 292,michael frerker,chinese democracy,frerker,130
@@ -341,10 +341,10 @@
 340,gordon,kgb,gordon,
 341,adam gosling,swedish blue,gosling,146
 342,kevin grainger,gumption3,grainger,147
-343,kevin grainger,gumptionï¿_,grainger,147
+343,kevin grainger,gumption´è_,grainger,147
 344,kevin grainger,gumption 3,grainger,147
 345,kevin grainger,gumption,grainger,147
-346,kevin grainger,gumptionÂ_,grainger,147
+346,kevin grainger,gumptionÎ_,grainger,147
 347,john greevean,contessa,greevean,148
 348,john greeven,contessa,greeven,148
 349,"john  greeven",contessa,greeven,148
@@ -658,10 +658,10 @@
 657,scott piper,trankeylo,piper,292
 658,scott piper,pipe dream xvi,piper,292
 659,tom piper,pied piper,piper,293
-660,scott piper,pipe dream 12,piper,293
-661,"scott  piper","pipe  dream 12",piper,293
-662,"tom  piper","pied  piper",piper,292
-663,tom piper,pipe line,piper,292
+660,scott piper,pipe dream 12,piper,292
+661,"scott  piper","pipe  dream 12",piper,292
+662,"tom  piper","pied  piper",piper,293
+663,tom piper,pipe line,piper,293
 664,randall pittman,ruffian,pittman,294
 665,keen pj,NA,pj,207
 666,john podmajersky,usa 1310,podmajersky,296
@@ -689,20 +689,20 @@
 688,tony rae,oatmeal,rae,304
 689,hertz ralph,NA,ralph,265
 690,carpenter ralph,NA,ralph,61
-691,ante razmilovic,swedish blue,razmilovic,306
-692,ante razmilovic,swedish blue  (corinthian),razmilovic,306
-693,razmilovic,swedish blue,razmilovic,306
-694,ante & nils razmilovic,swedish blue,razmilovic,306
-695,nils razmilovic,enda lima shamba,razmilovic,306
-696,"ante  razmilovic","swedish  blue",razmilovic,306
-697,nils razmilovic,mtu moja na umbwa yake,razmilovic,306
-698,ante razmilovich,swedish blue,razmilovich,306
+691,ante razmilovic,swedish blue,razmilovic,
+692,ante razmilovic,swedish blue  (corinthian),razmilovic,
+693,razmilovic,swedish blue,razmilovic,
+694,ante & nils razmilovic,swedish blue,razmilovic,
+695,nils razmilovic,enda lima shamba,razmilovic,
+696,"ante  razmilovic","swedish  blue",razmilovic,
+697,nils razmilovic,mtu moja na umbwa yake,razmilovic,
+698,ante razmilovich,swedish blue,razmilovich,
 699,ken read,usa 1262,read,307
 700,andre reese,proudest monkey,reese,308
 701,tony rey,efyra iii,rey,309
 702,tony rey,efyra 3,rey,309
 703,kirk reynolds,usa 1076,reynolds,310
-704,ricketson,usa 1248Â_,ricketson,311
+704,ricketson,usa 1248Î_,ricketson,311
 705,ricketson,usa 1248,ricketson,311
 706,wray robert,NA,robert,312
 707,bob robinson,serendipity,robinson,313
@@ -773,8 +773,8 @@
 772,patricia stadel,witchcraft,stadel,288
 773,"patricia  stadel","usa  1061",stadel,288
 774,patricia stadel,usa 1061,stadel,288
-775,nicholas stagg,china wight,stagg,341
-776,nick stagg,china wight,stagg,341
+775,nicholas stagg,china wight,stagg,382
+776,nick stagg,china wight,stagg,382
 777,dick steffen,uhu,steffen,342
 778,russel steiner,third rock,steiner,343
 779,mark steinmetz,woody,steinmetz,344

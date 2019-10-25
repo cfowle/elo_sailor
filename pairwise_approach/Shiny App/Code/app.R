@@ -20,8 +20,8 @@ ui <- fluidPage(
   br(),
   selectizeInput("dataset", 
                  "Active Dataset",
-                 c("College", "Laser"),
-                 selected = "College",
+                 c("College", "Laser", "Etchells"),
+                 selected = "Etchells",
                  multiple = FALSE,
                  options = NULL),
   tabsetPanel(
@@ -81,15 +81,15 @@ server <- function(input, output, session) {
                    mutate(rating = rating - scale) %>%
                    mutate(percentile = rating/range*100)
                  
-                 ##LOAD COMPETITORS
-                 data$competitors = read_csv(paste0("../Input/",
-                                                    input$dataset,
-                                                    "/competitors.csv"))
-                 
-                 ##LOAD REGATTAS
-                 data$regattas =read_csv(paste0("../Input/",
-                                                input$dataset,
-                                                "/regattas.csv"))
+                 # ##LOAD COMPETITORS
+                 # data$competitors = read_csv(paste0("../Input/",
+                 #                                    input$dataset,
+                 #                                    "/competitors.csv"))
+                 # 
+                 # ##LOAD REGATTAS
+                 # data$regattas =read_csv(paste0("../Input/",
+                 #                                input$dataset,
+                 #                                "/regattas.csv"))
                  
                  ##LOAD RESULTS
                  data$results =read_csv(paste0("../Input/",
@@ -104,7 +104,7 @@ server <- function(input, output, session) {
                  }
                  
                  ##SET CHOICES
-                 choices = unique(data$competitors$competitorID)
+                 choices = unique(data$results$competitorID)
                  updateSelectizeInput(session,
                                       inputId = 'activeCompetitor',
                                       choices = choices,

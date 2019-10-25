@@ -1,0 +1,344 @@
+"","regatta_id","day","raceID","competitorID","competitorName","score","place"
+"1",1,2018-09-08,0,"Boston University","Boston University",159,2
+"2",1,2018-09-08,0,"Bowdoin College","Bowdoin College",212,4
+"3",1,2018-09-08,0,"Brown University","Brown University",262,9
+"4",1,2018-09-08,0,"Connecticut College","Connecticut College",247,7
+"5",1,2018-09-08,0,"Dartmouth College","Dartmouth College",226,5
+"6",1,2018-09-08,0,"Harvard University","Harvard University",228,6
+"7",1,2018-09-08,0,"Massachusetts Institute of Technology","Massachusetts Institute of Technology",176,3
+"8",1,2018-09-08,0,"Northeastern University","Northeastern University",479,16
+"9",1,2018-09-08,0,"Roger Williams University","Roger Williams University",262,10
+"10",1,2018-09-08,0,"Salve Regina University","Salve Regina University",396,15
+"11",1,2018-09-08,0,"Tufts University","Tufts University",249,8
+"12",1,2018-09-08,0,"U. S. Coast Guard Academy","U. S. Coast Guard Academy",328,12
+"13",1,2018-09-08,0,"University of Rhode Island","University of Rhode Island",333,13
+"14",1,2018-09-08,0,"University of Vermont","University of Vermont",345,14
+"15",1,2018-09-08,0,"Yale University","Yale University",152,1
+"16",2,2018-09-08,0,"Bates College","Bates College",156,8
+"17",2,2018-09-08,0,"Boston College","Boston College",71,1
+"18",2,2018-09-08,0,"Boston University","Boston University",91,3
+"19",2,2018-09-08,0,"Bowdoin College","Bowdoin College",150,7
+"20",2,2018-09-08,0,"Connecticut College","Connecticut College",113,4
+"21",2,2018-09-08,0,"Maine Maritime Academy","Maine Maritime Academy",189,10
+"22",2,2018-09-08,0,"Massachusetts Maritime Academy","Massachusetts Maritime Academy",157,9
+"23",2,2018-09-08,0,"Northeastern University","Northeastern University",212,11
+"24",2,2018-09-08,0,"Tufts University","Tufts University",74,2
+"25",2,2018-09-08,0,"University of Rhode Island","University of Rhode Island",119,5
+"26",2,2018-09-08,0,"University of Vermont","University of Vermont",130,6
+"27",3,2018-09-08,0,"Boston University","Boston University",59,4
+"28",3,2018-09-08,0,"Brown University","Brown University",34,1
+"29",3,2018-09-08,0,"Dartmouth College","Dartmouth College",57,3
+"30",3,2018-09-08,0,"Massachusetts Institute of Technology","Massachusetts Institute of Technology",79,7
+"31",3,2018-09-08,0,"Roger Williams University","Roger Williams University",60,5
+"32",3,2018-09-08,0,"U. S. Coast Guard Academy","U. S. Coast Guard Academy",69,6
+"33",3,2018-09-08,0,"Yale University","Yale University",34,2
+"34",4,2018-09-08,0,"Boston College","Boston College",19,2
+"35",4,2018-09-08,0,"Bowdoin College","Bowdoin College",18,1
+"36",4,2018-09-08,0,"Connecticut College","Connecticut College",44,7
+"37",4,2018-09-08,0,"Maine Maritime Academy","Maine Maritime Academy",40,6
+"38",4,2018-09-08,0,"Massachusetts Maritime Academy","Massachusetts Maritime Academy",58,8
+"39",4,2018-09-08,0,"Northeastern University","Northeastern University",36,3
+"40",4,2018-09-08,0,"Tufts University","Tufts University",36,4
+"41",4,2018-09-08,0,"University of Rhode Island","University of Rhode Island",37,5
+"42",5,2018-09-08,0,"Bentley University","Bentley University",262,12
+"43",5,2018-09-08,0,"Brown University","Brown University",151,5
+"44",5,2018-09-08,0,"McGill University","McGill University",302,14
+"45",5,2018-09-08,0,"Roger Williams University","Roger Williams University",114,1
+"46",5,2018-09-08,0,"Salve Regina University","Salve Regina University",192,8
+"47",5,2018-09-08,0,"Tufts University","Tufts University",164,6
+"48",5,2018-09-08,0,"U. S. Coast Guard Academy","U. S. Coast Guard Academy",122,4
+"49",5,2018-09-08,0,"University of Connecticut","University of Connecticut",263,13
+"50",5,2018-09-08,0,"University of Rhode Island","University of Rhode Island",173,7
+"51",5,2018-09-08,0,"University of Vermont","University of Vermont",121,2
+"52",5,2018-09-08,0,"Wentworth Institute of Technology","Wentworth Institute of Technology",307,15
+"53",5,2018-09-08,0,"Yale University","Yale University",241,9
+"54",6,2018-09-15,0,"Boston College","Boston College",71,8
+"55",6,2018-09-15,0,"Boston University","Boston University",101,13
+"56",6,2018-09-15,0,"Bowdoin College","Bowdoin College",87,10
+"57",6,2018-09-15,0,"Brown University","Brown University",105,15
+"58",6,2018-09-15,0,"Connecticut College","Connecticut College",96,11
+"59",6,2018-09-15,0,"Dartmouth College","Dartmouth College",19,1
+"60",6,2018-09-15,0,"Harvard University","Harvard University",69,7
+"61",6,2018-09-15,0,"Massachusetts Institute of Technology","Massachusetts Institute of Technology",65,6
+"62",6,2018-09-15,0,"Northeastern University","Northeastern University",99,12
+"63",6,2018-09-15,0,"Roger Williams University","Roger Williams University",46,2
+"64",6,2018-09-15,0,"Salve Regina University","Salve Regina University",140,17
+"65",6,2018-09-15,0,"Tufts University","Tufts University",55,3
+"66",6,2018-09-15,0,"U. S. Coast Guard Academy","U. S. Coast Guard Academy",102,14
+"67",6,2018-09-15,0,"University of Rhode Island","University of Rhode Island",65,5
+"68",6,2018-09-15,0,"University of Vermont","University of Vermont",85,9
+"69",6,2018-09-15,0,"Yale University","Yale University",58,4
+"70",7,2018-09-15,0,"Boston College","Boston College",47,2
+"71",7,2018-09-15,0,"Boston University","Boston University",67,4
+"72",7,2018-09-15,0,"Brown University","Brown University",56,3
+"73",7,2018-09-15,0,"Connecticut College","Connecticut College",196,20
+"74",7,2018-09-15,0,"Harvard University","Harvard University",37,1
+"75",7,2018-09-15,0,"Roger Williams University","Roger Williams University",89,8
+"76",7,2018-09-15,0,"Tufts University","Tufts University",124,12
+"77",7,2018-09-15,0,"U. S. Coast Guard Academy","U. S. Coast Guard Academy",79,7
+"78",7,2018-09-15,0,"University of Rhode Island","University of Rhode Island",178,18
+"79",7,2018-09-15,0,"Yale University","Yale University",75,5
+"80",8,2018-09-15,0,"Bates College","Bates College",387,17
+"81",8,2018-09-15,0,"Boston College","Boston College",221,10
+"82",8,2018-09-15,0,"Boston University","Boston University",177,5
+"83",8,2018-09-15,0,"Bowdoin College","Bowdoin College",132,1
+"84",8,2018-09-15,0,"Dartmouth College","Dartmouth College",229,11
+"85",8,2018-09-15,0,"Harvard University","Harvard University",206,9
+"86",8,2018-09-15,0,"Massachusetts Maritime Academy","Massachusetts Maritime Academy",286,16
+"87",8,2018-09-15,0,"Northeastern University","Northeastern University",271,15
+"88",8,2018-09-15,0,"Roger Williams University","Roger Williams University",159,3
+"89",8,2018-09-15,0,"Salve Regina University","Salve Regina University",262,14
+"90",8,2018-09-15,0,"Tufts University","Tufts University",150,2
+"91",8,2018-09-15,0,"U. S. Coast Guard Academy","U. S. Coast Guard Academy",181,6
+"92",8,2018-09-15,0,"University of Vermont","University of Vermont",261,13
+"93",9,2018-09-22,0,"Boston College","Boston College",178,8
+"94",9,2018-09-22,0,"Boston University","Boston University",210,11
+"95",9,2018-09-22,0,"Bowdoin College","Bowdoin College",161,2
+"96",9,2018-09-22,0,"Brown University","Brown University",170,4
+"97",9,2018-09-22,0,"Connecticut College","Connecticut College",218,12
+"98",9,2018-09-22,0,"Dartmouth College","Dartmouth College",203,10
+"99",9,2018-09-22,0,"Harvard University","Harvard University",137,1
+"100",9,2018-09-22,0,"Massachusetts Institute of Technology","Massachusetts Institute of Technology",173,7
+"101",9,2018-09-22,0,"Massachusetts Maritime Academy","Massachusetts Maritime Academy",285,17
+"102",9,2018-09-22,0,"Roger Williams University","Roger Williams University",165,3
+"103",9,2018-09-22,0,"Salve Regina University","Salve Regina University",301,18
+"104",9,2018-09-22,0,"Tufts University","Tufts University",238,14
+"105",9,2018-09-22,0,"U. S. Coast Guard Academy","U. S. Coast Guard Academy",173,6
+"106",9,2018-09-22,0,"University of Rhode Island","University of Rhode Island",232,13
+"107",9,2018-09-22,0,"University of Vermont","University of Vermont",244,15
+"108",9,2018-09-22,0,"Yale University","Yale University",173,5
+"109",10,2018-09-22,0,"Boston College","Boston College",268,7
+"110",10,2018-09-22,0,"Boston University","Boston University",181,2
+"111",10,2018-09-22,0,"Bowdoin College","Bowdoin College",245,6
+"112",10,2018-09-22,0,"Brown University","Brown University",307,10
+"113",10,2018-09-22,0,"Connecticut College","Connecticut College",279,8
+"114",10,2018-09-22,0,"Harvard University","Harvard University",227,4
+"115",10,2018-09-22,0,"Massachusetts Institute of Technology","Massachusetts Institute of Technology",306,9
+"116",10,2018-09-22,0,"Roger Williams University","Roger Williams University",240,5
+"117",10,2018-09-22,0,"Tufts University","Tufts University",113,1
+"118",10,2018-09-22,0,"Yale University","Yale University",425,11
+"119",11,2018-09-22,0,"Bentley University","Bentley University",268,14
+"120",11,2018-09-22,0,"Boston College","Boston College",128,2
+"121",11,2018-09-22,0,"Bowdoin College","Bowdoin College",208,9
+"122",11,2018-09-22,0,"Harvard University","Harvard University",158,6
+"123",11,2018-09-22,0,"Massachusetts Maritime Academy","Massachusetts Maritime Academy",296,15
+"124",11,2018-09-22,0,"Northeastern University","Northeastern University",212,10
+"125",11,2018-09-22,0,"Roger Williams University","Roger Williams University",137,3
+"126",11,2018-09-22,0,"Salve Regina University","Salve Regina University",223,11
+"127",11,2018-09-22,0,"Tufts University","Tufts University",147,4
+"128",11,2018-09-22,0,"U. S. Coast Guard Academy","U. S. Coast Guard Academy",155,5
+"129",11,2018-09-22,0,"University of Massachusetts at Amherst","University of Massachusetts at Amherst",402,17
+"130",11,2018-09-22,0,"University of Rhode Island","University of Rhode Island",120,1
+"131",11,2018-09-22,0,"University of Vermont","University of Vermont",226,12
+"132",11,2018-09-22,0,"Wentworth Institute of Technology","Wentworth Institute of Technology",365,16
+"133",12,2018-09-22,0,"Bates College","Bates College",177,13
+"134",12,2018-09-22,0,"Brown University","Brown University",70,4
+"135",12,2018-09-22,0,"Fairfield University","Fairfield University",158,12
+"136",12,2018-09-22,0,"Maine Maritime Academy","Maine Maritime Academy",118,9
+"137",12,2018-09-22,0,"Massachusetts Maritime Academy","Massachusetts Maritime Academy",206,16
+"138",12,2018-09-22,0,"McGill University","McGill University",142,11
+"139",12,2018-09-22,0,"Middlebury College","Middlebury College",241,17
+"140",12,2018-09-22,0,"Providence College","Providence College",300,18
+"141",12,2018-09-22,0,"Salve Regina University","Salve Regina University",103,7
+"142",12,2018-09-22,0,"Tufts University","Tufts University",92,6
+"143",12,2018-09-22,0,"U. S. Coast Guard Academy","U. S. Coast Guard Academy",59,1
+"144",12,2018-09-22,0,"University of Massachusetts at Amherst","University of Massachusetts at Amherst",204,15
+"145",12,2018-09-22,0,"University of Rhode Island","University of Rhode Island",67,3
+"146",12,2018-09-22,0,"University of Vermont","University of Vermont",65,2
+"147",12,2018-09-22,0,"Wesleyan University","Wesleyan University",184,14
+"148",12,2018-09-22,0,"Yale University","Yale University",129,10
+"149",13,2018-09-29,0,"Boston College","Boston College",83,4
+"150",13,2018-09-29,0,"Boston University","Boston University",108,12
+"151",13,2018-09-29,0,"Bowdoin College","Bowdoin College",88,7
+"152",13,2018-09-29,0,"Connecticut College","Connecticut College",78,3
+"153",13,2018-09-29,0,"Dartmouth College","Dartmouth College",88,9
+"154",13,2018-09-29,0,"Harvard University","Harvard University",88,8
+"155",13,2018-09-29,0,"Massachusetts Institute of Technology","Massachusetts Institute of Technology",87,6
+"156",13,2018-09-29,0,"Roger Williams University","Roger Williams University",117,15
+"157",13,2018-09-29,0,"Tufts University","Tufts University",94,10
+"158",13,2018-09-29,0,"U. S. Coast Guard Academy","U. S. Coast Guard Academy",85,5
+"159",13,2018-09-29,0,"University of Rhode Island","University of Rhode Island",148,19
+"160",13,2018-09-29,0,"Yale University","Yale University",68,2
+"161",14,2018-09-29,0,"Boston University","Boston University",62,1
+"162",14,2018-09-29,0,"Brown University","Brown University",111,6
+"163",14,2018-09-29,0,"Harvard University","Harvard University",109,5
+"164",14,2018-09-29,0,"Massachusetts Institute of Technology","Massachusetts Institute of Technology",187,11
+"165",14,2018-09-29,0,"Massachusetts Maritime Academy","Massachusetts Maritime Academy",215,13
+"166",14,2018-09-29,0,"Northeastern University","Northeastern University",218,14
+"167",14,2018-09-29,0,"Roger Williams University","Roger Williams University",154,10
+"168",14,2018-09-29,0,"Tufts University","Tufts University",103,4
+"169",14,2018-09-29,0,"U. S. Coast Guard Academy","U. S. Coast Guard Academy",230,15
+"170",14,2018-09-29,0,"University of Rhode Island","University of Rhode Island",76,2
+"171",14,2018-09-29,0,"Yale University","Yale University",94,3
+"172",15,2018-09-29,0,"Bentley University","Bentley University",344,16
+"173",15,2018-09-29,0,"Boston College","Boston College",175,5
+"174",15,2018-09-29,0,"Boston University","Boston University",244,10
+"175",15,2018-09-29,0,"Brown University","Brown University",205,7
+"176",15,2018-09-29,0,"Harvard University","Harvard University",200,6
+"177",15,2018-09-29,0,"Maine Maritime Academy","Maine Maritime Academy",319,15
+"178",15,2018-09-29,0,"Massachusetts Institute of Technology","Massachusetts Institute of Technology",303,14
+"179",15,2018-09-29,0,"Massachusetts Maritime Academy","Massachusetts Maritime Academy",361,18
+"180",15,2018-09-29,0,"Middlebury College","Middlebury College",375,19
+"181",15,2018-09-29,0,"Northeastern University","Northeastern University",232,9
+"182",15,2018-09-29,0,"Roger Williams University","Roger Williams University",156,3
+"183",15,2018-09-29,0,"Salve Regina University","Salve Regina University",261,12
+"184",15,2018-09-29,0,"Tufts University","Tufts University",114,1
+"185",15,2018-09-29,0,"University of Massachusetts at Amherst","University of Massachusetts at Amherst",504,20
+"186",15,2018-09-29,0,"University of Rhode Island","University of Rhode Island",286,13
+"187",15,2018-09-29,0,"University of Vermont","University of Vermont",159,4
+"188",15,2018-09-29,0,"Yale University","Yale University",254,11
+"189",16,2018-09-29,0,"Bates College","Bates College",71,5
+"190",16,2018-09-29,0,"Massachusetts Maritime Academy","Massachusetts Maritime Academy",72,7
+"191",16,2018-09-29,0,"McGill University","McGill University",74,8
+"192",16,2018-09-29,0,"Middlebury College","Middlebury College",115,10
+"193",16,2018-09-29,0,"Northeastern University","Northeastern University",61,4
+"194",16,2018-09-29,0,"Sacred Heart University","Sacred Heart University",95,9
+"195",16,2018-09-29,0,"Salve Regina University","Salve Regina University",33,2
+"196",16,2018-09-29,0,"Tufts University","Tufts University",34,3
+"197",16,2018-09-29,0,"University of Connecticut","University of Connecticut",196,12
+"198",16,2018-09-29,0,"University of Massachusetts at Amherst","University of Massachusetts at Amherst",156,11
+"199",16,2018-09-29,0,"University of Vermont","University of Vermont",31,1
+"200",17,2018-10-06,0,"Bowdoin College","Bowdoin College",202,4
+"201",17,2018-10-06,0,"Brown University","Brown University",182,1
+"202",17,2018-10-06,0,"Dartmouth College","Dartmouth College",259,8
+"203",17,2018-10-06,0,"Massachusetts Institute of Technology","Massachusetts Institute of Technology",200,3
+"204",17,2018-10-06,0,"Northeastern University","Northeastern University",405,14
+"205",17,2018-10-06,0,"Tufts University","Tufts University",215,6
+"206",17,2018-10-06,0,"U. S. Coast Guard Academy","U. S. Coast Guard Academy",271,9
+"207",18,2018-10-06,0,"Boston College","Boston College",164,8
+"208",18,2018-10-06,0,"Boston University","Boston University",157,7
+"209",18,2018-10-06,0,"Connecticut College","Connecticut College",188,11
+"210",18,2018-10-06,0,"Harvard University","Harvard University",145,4
+"211",18,2018-10-06,0,"Massachusetts Maritime Academy","Massachusetts Maritime Academy",265,16
+"212",18,2018-10-06,0,"Roger Williams University","Roger Williams University",138,3
+"213",18,2018-10-06,0,"University of Rhode Island","University of Rhode Island",179,10
+"214",18,2018-10-06,0,"University of Vermont","University of Vermont",239,15
+"215",18,2018-10-06,0,"Yale University","Yale University",87,1
+"216",19,2018-10-06,0,"Boston College","Boston College",92,1
+"217",19,2018-10-06,0,"Boston University","Boston University",200,12
+"218",19,2018-10-06,0,"Bowdoin College","Bowdoin College",159,6
+"219",19,2018-10-06,0,"Brown University","Brown University",102,2
+"220",19,2018-10-06,0,"Connecticut College","Connecticut College",173,10
+"221",19,2018-10-06,0,"Harvard University","Harvard University",127,4
+"222",19,2018-10-06,0,"McGill University","McGill University",316,17
+"223",19,2018-10-06,0,"Northeastern University","Northeastern University",236,14
+"224",19,2018-10-06,0,"Roger Williams University","Roger Williams University",145,5
+"225",19,2018-10-06,0,"Salve Regina University","Salve Regina University",161,7
+"226",19,2018-10-06,0,"Tufts University","Tufts University",172,9
+"227",19,2018-10-06,0,"University of Rhode Island","University of Rhode Island",161,8
+"228",19,2018-10-06,0,"University of Vermont","University of Vermont",119,3
+"229",19,2018-10-06,0,"Wesleyan University","Wesleyan University",345,18
+"230",19,2018-10-06,0,"Yale University","Yale University",252,15
+"231",20,2018-10-06,0,"Bates College","Bates College",164,9
+"232",20,2018-10-06,0,"Brown University","Brown University",50,3
+"233",20,2018-10-06,0,"Massachusetts Maritime Academy","Massachusetts Maritime Academy",73,5
+"234",20,2018-10-06,0,"Salve Regina University","Salve Regina University",38,1
+"235",20,2018-10-06,0,"Tufts University","Tufts University",47,2
+"236",20,2018-10-06,0,"University of Massachusetts at Dartmouth","University of Massachusetts at Dartmouth",115,7
+"237",20,2018-10-06,0,"University of Vermont","University of Vermont",176,10
+"238",20,2018-10-06,0,"Wentworth Institute of Technology","Wentworth Institute of Technology",121,8
+"239",21,2018-11-16,0,"Boston College","Boston College",1,1
+"240",21,2018-11-16,0,"Dartmouth College","Dartmouth College",7,7
+"241",22,2018-10-13,0,"Boston University","Boston University",257,6
+"242",22,2018-10-13,0,"Connecticut College","Connecticut College",343,13
+"243",22,2018-10-13,0,"Dartmouth College","Dartmouth College",241,4
+"244",22,2018-10-13,0,"Harvard University","Harvard University",196,2
+"245",22,2018-10-13,0,"Massachusetts Institute of Technology","Massachusetts Institute of Technology",395,14
+"246",22,2018-10-13,0,"Roger Williams University","Roger Williams University",273,8
+"247",22,2018-10-13,0,"Tufts University","Tufts University",285,10
+"248",22,2018-10-13,0,"U. S. Coast Guard Academy","U. S. Coast Guard Academy",268,7
+"249",22,2018-10-13,0,"University of Rhode Island","University of Rhode Island",252,5
+"250",22,2018-10-13,0,"University of Vermont","University of Vermont",308,11
+"251",22,2018-10-13,0,"Yale University","Yale University",277,9
+"252",23,2018-10-13,0,"Bowdoin College","Bowdoin College",147,2
+"253",23,2018-10-13,0,"Maine Maritime Academy","Maine Maritime Academy",275,6
+"254",23,2018-10-13,0,"Massachusetts Maritime Academy","Massachusetts Maritime Academy",211,4
+"255",23,2018-10-13,0,"Middlebury College","Middlebury College",362,9
+"256",23,2018-10-13,0,"Northeastern University","Northeastern University",218,5
+"257",23,2018-10-13,0,"Tufts University","Tufts University",291,7
+"258",23,2018-10-13,0,"University of Vermont","University of Vermont",80,1
+"259",24,2018-10-13,0,"Bates College","Bates College",134,6
+"260",24,2018-10-13,0,"Fairfield University","Fairfield University",140,7
+"261",24,2018-10-13,0,"McGill University","McGill University",71,3
+"262",24,2018-10-13,0,"Middlebury College","Middlebury College",167,10
+"263",24,2018-10-13,0,"Sacred Heart University","Sacred Heart University",164,9
+"264",24,2018-10-13,0,"Salve Regina University","Salve Regina University",42,2
+"265",24,2018-10-13,0,"University of Massachusetts at Amherst","University of Massachusetts at Amherst",106,5
+"266",24,2018-10-13,0,"University of Vermont","University of Vermont",33,1
+"267",24,2018-10-13,0,"Wesleyan University","Wesleyan University",142,8
+"268",24,2018-10-13,0,"Yale University","Yale University",104,4
+"269",25,2018-10-20,0,"Boston College","Boston College",299,6
+"270",25,2018-10-20,0,"Boston University","Boston University",441,17
+"271",25,2018-10-20,0,"Bowdoin College","Bowdoin College",275,2
+"272",25,2018-10-20,0,"Brown University","Brown University",314,8
+"273",25,2018-10-20,0,"Dartmouth College","Dartmouth College",346,13
+"274",25,2018-10-20,0,"Harvard University","Harvard University",335,10
+"275",25,2018-10-20,0,"Massachusetts Institute of Technology","Massachusetts Institute of Technology",290,5
+"276",25,2018-10-20,0,"Roger Williams University","Roger Williams University",320,9
+"277",25,2018-10-20,0,"Tufts University","Tufts University",420,15
+"278",25,2018-10-20,0,"U. S. Coast Guard Academy","U. S. Coast Guard Academy",340,11
+"279",25,2018-10-20,0,"Yale University","Yale University",246,1
+"280",26,2018-10-20,0,"Connecticut College","Connecticut College",215,6
+"281",26,2018-10-20,0,"Massachusetts Maritime Academy","Massachusetts Maritime Academy",331,15
+"282",26,2018-10-20,0,"Northeastern University","Northeastern University",297,11
+"283",26,2018-10-20,0,"University of Rhode Island","University of Rhode Island",366,17
+"284",26,2018-10-20,0,"University of Vermont","University of Vermont",244,9
+"285",27,2018-10-20,0,"Boston College","Boston College",310,4
+"286",27,2018-10-20,0,"Boston University","Boston University",219,2
+"287",27,2018-10-20,0,"Bowdoin College","Bowdoin College",328,5
+"288",27,2018-10-20,0,"Brown University","Brown University",424,10
+"289",27,2018-10-20,0,"Connecticut College","Connecticut College",479,15
+"290",27,2018-10-20,0,"Dartmouth College","Dartmouth College",368,9
+"291",27,2018-10-20,0,"Harvard University","Harvard University",485,16
+"292",27,2018-10-20,0,"Maine Maritime Academy","Maine Maritime Academy",602,19
+"293",27,2018-10-20,0,"Massachusetts Institute of Technology","Massachusetts Institute of Technology",462,13
+"294",27,2018-10-20,0,"Massachusetts Maritime Academy","Massachusetts Maritime Academy",578,18
+"295",27,2018-10-20,0,"Northeastern University","Northeastern University",335,6
+"296",27,2018-10-20,0,"Roger Williams University","Roger Williams University",302,3
+"297",27,2018-10-20,0,"Salve Regina University","Salve Regina University",509,17
+"298",27,2018-10-20,0,"Tufts University","Tufts University",439,11
+"299",27,2018-10-20,0,"U. S. Coast Guard Academy","U. S. Coast Guard Academy",363,7
+"300",27,2018-10-20,0,"University of Massachusetts at Amherst","University of Massachusetts at Amherst",735,20
+"301",27,2018-10-20,0,"University of Rhode Island","University of Rhode Island",161,1
+"302",27,2018-10-20,0,"University of Vermont","University of Vermont",472,14
+"303",27,2018-10-20,0,"Yale University","Yale University",366,8
+"304",28,2018-10-20,0,"Fairfield University","Fairfield University",78,5
+"305",28,2018-10-20,0,"McGill University","McGill University",123,9
+"306",28,2018-10-20,0,"Middlebury College","Middlebury College",147,11
+"307",28,2018-10-20,0,"Sacred Heart University","Sacred Heart University",117,7
+"308",28,2018-10-20,0,"Salve Regina University","Salve Regina University",64,3
+"309",28,2018-10-20,0,"Tufts University","Tufts University",33,1
+"310",28,2018-10-20,0,"University of Massachusetts at Amherst","University of Massachusetts at Amherst",75,4
+"311",28,2018-10-20,0,"University of Massachusetts at Dartmouth","University of Massachusetts at Dartmouth",146,10
+"312",28,2018-10-20,0,"University of Vermont","University of Vermont",44,2
+"313",28,2018-10-20,0,"Wentworth Institute of Technology","Wentworth Institute of Technology",108,6
+"314",28,2018-10-20,0,"Yale University","Yale University",117,8
+"315",29,2018-10-27,0,"Boston College","Boston College",210,7
+"316",29,2018-10-27,0,"Boston University","Boston University",268,11
+"317",29,2018-10-27,0,"Bowdoin College","Bowdoin College",201,6
+"318",29,2018-10-27,0,"Brown University","Brown University",199,5
+"319",29,2018-10-27,0,"Connecticut College","Connecticut College",246,9
+"320",29,2018-10-27,0,"Dartmouth College","Dartmouth College",165,2
+"321",29,2018-10-27,0,"Harvard University","Harvard University",180,3
+"322",29,2018-10-27,0,"Maine Maritime Academy","Maine Maritime Academy",448,18
+"323",29,2018-10-27,0,"Massachusetts Institute of Technology","Massachusetts Institute of Technology",260,10
+"324",29,2018-10-27,0,"Massachusetts Maritime Academy","Massachusetts Maritime Academy",379,16
+"325",29,2018-10-27,0,"Northeastern University","Northeastern University",359,15
+"326",29,2018-10-27,0,"Roger Williams University","Roger Williams University",187,4
+"327",29,2018-10-27,0,"Salve Regina University","Salve Regina University",394,17
+"328",29,2018-10-27,0,"Tufts University","Tufts University",232,8
+"329",29,2018-10-27,0,"U. S. Coast Guard Academy","U. S. Coast Guard Academy",297,13
+"330",29,2018-10-27,0,"University of Rhode Island","University of Rhode Island",280,12
+"331",29,2018-10-27,0,"University of Vermont","University of Vermont",344,14
+"332",29,2018-10-27,0,"Yale University","Yale University",147,1
+"333",30,2018-10-27,0,"Bates College","Bates College",79,1
+"334",30,2018-10-27,0,"McGill University","McGill University",87,2
+"335",30,2018-10-27,0,"Middlebury College","Middlebury College",109,3
+"336",30,2018-10-27,0,"University of Massachusetts at Amherst","University of Massachusetts at Amherst",131,4
+"337",30,2018-10-27,0,"Wentworth Institute of Technology","Wentworth Institute of Technology",144,5
+"338",NA,NA,0,"Emmanuel College","Emmanuel College",NA,NA
+"339",NA,NA,0,"Johnson and Wales University","Johnson and Wales University",NA,NA
+"340",NA,NA,0,"University of New Hampshire","University of New Hampshire",NA,NA
+"341",NA,NA,0,"Wellesley College","Wellesley College",NA,NA
+"342",NA,NA,0,"Williams College","Williams College",NA,NA
+"343",NA,NA,0,"Worcester Polytechnical Institute","Worcester Polytechnical Institute",NA,NA

@@ -17,12 +17,21 @@ college %<>%
   summarise(score = min(score), place = min(place)) %>%
   ungroup()
 
-##TODO: Import clean results dataset
+##Import clean results dataset
+if(IS_PAIRWISE) {
+  pairwiseResults = read_csv("../Input/etchells_races_pairwise.csv") %>%
+    rename(regattaID = regatta_id)
+}
+
+etchells = read_csv("../Input/etchells_races.csv")
 ##TODO: If using existing ratingss, import existing ratingss table
 
 ##If starting fresh, create existingRatings, pastRatings, competitors, and
 ##regattas tables
-results = college
+results = etchells %>%
+  filter(!is.na(competitorID) & !is.na(score)) %>%
+  arrange(regatta_id)
+
 existingRatings = data.frame(competitorID = character(),
                              regattaID = character(),
                              day = numeric(),
@@ -45,21 +54,24 @@ regattaTable = results %>%
 for(i in 1:nrow(regattaTable)){
   regatta = regattaTable[i,]
   id = regatta$regattaID[[1]]
+  print(id)
   regattaResults = results %>%
     filter(regatta_id == id)
+  if(IS_PAIRWISE) {
+    regattaResultsPairwise = filter(pairwiseResults, regattaID == id & !is.na(win))
+  }
+  
   output = updateExistingRatings(existingRatings,
                                  competitors,
                                  pastRatings,
                                  regatta,
-                                 regattaResults)
+                                 regattaResults,
+                                 regattaResultsPairwise)
   existingRatings = output[["current"]]
   pastRatings = output[["past"]]
+  competitors = output[["competitors"]]
 }
 
 ##TODO: Export results
-ratings = data.frame()
-for(i in 1:nrow(existingRatings)) {
-  competitor = existingRatings[i,]
-  print(competitor)
-  ratings %<>% bind_rows(data.frame(competitor$competitorID, competitor$rating))
-}
+write.csv(existingRatings, "../Output/ratings_etchells.csv")
+write.csv(pastRatings, "../Output/past_ratings_etchells.csv")
